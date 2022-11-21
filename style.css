@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --yellow: #FFC800;
+    --black: #121212;
+    --white: #FEFEFE;
+    /* Fonts */
+    --font-headings: "Noto Sans";
+    --font-call-to-action: "Noto Sans";
+    --font-sub-headings: "Muli";
+    --font-text: "Muli";
+}
+
+/* HEADER */
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 1.6vw;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+#nav-bar li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#logo {
+    flex: 0.7;
+}
+
+#logo img {
+    min-width: 10vw;
+    width: 10vw;
+    height: auto;
+}
+
+/* HEADER */
