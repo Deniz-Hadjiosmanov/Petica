@@ -61,6 +61,7 @@ body {
 
 /* HOME */
 
+
 #home-background-container {
     position: absolute;
     display: flex;
@@ -142,7 +143,112 @@ body {
 
 /* TIPS */
 
-/* Code here */
+#advice-background-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    top: 0vh;
+    z-index: -1;
+}
+
+#advice-background-img {
+    width: 100vw;
+    height: auto;
+}
+
+#advice-background-container h2 {
+    position: absolute;
+    text-transform: uppercase;
+    right: 20vw;
+    font-size: 3vw;
+    font-family: var(--font-headings);
+    text-align: center;
+}
+
+#advice-background-container h2 a {
+    color: var(--white);
+    font-size: 6vw;
+    text-decoration: none;
+}
+
+#advice-container {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: auto;
+    align-items: center;
+}
+
+#advice-container h1 {
+    text-align: center;
+    font-family: var(--font-headings);
+    font-size: 4vw;
+}
+
+.advice-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    width: 80vw;
+}
+
+.advice-row img {
+    width: 30vw;
+    height: auto;
+}
+.advice-row img:hover {
+    cursor: pointer;
+}
+
+
+/*hover over img */
+.container {
+    position: relative;
+    width: 30vw;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--yellow);
+    border-radius: 2.5vw;
+}
+  
+.container:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+  
+.text {
+    color: black;
+    font-size: 1.15vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 
 /* TIPS */
 
@@ -196,3 +302,8 @@ footer h2 {
 }
 
 /* FOOTER */
+
+
+
+
+
