@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     /* Colors */
     --yellow: #FFC800;
     --black: #121212;
+    --grey: #373737;
     --white: #FEFEFE;
     /* Fonts */
     --font-headings: "Noto Sans";
@@ -16,6 +21,11 @@
 }
 
 /* HEADER */
+
+#home-top-view {
+    width: 99vw;
+    height: 87vh;
+}
 
 #nav-bar {
     display: flex;
@@ -27,6 +37,7 @@
     font-size: 1.6vw;
     list-style-type: none;
     justify-content: space-around;
+    z-index: 1;
 }
 
 #nav-bar li a {
@@ -50,7 +61,65 @@
 
 /* HOME */
 
-/* Code here */
+#home-background-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    top: 0vh;
+    z-index: -1;
+}
+
+#home-dog {
+    width: 100vw;
+    height: auto;
+}
+
+#home-background-container h2 {
+    position: absolute;
+    text-transform: uppercase;
+    right: 20vw;
+    font-size: 3vw;
+    font-family: var(--font-headings);
+    text-align: center;
+}
+
+#home-background-container h2 a {
+    color: var(--white);
+    font-size: 6vw;
+    text-decoration: none;
+}
+
+#home-pet-choice {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: auto;
+    align-items: center;
+}
+
+#home-pet-choice h1 {
+    text-align: center;
+    font-family: var(--font-headings);
+    font-size: 4vw;
+}
+
+.home-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    width: 80vw;
+}
+
+.home-row img {
+    width: 30vw;
+    height: auto;
+    cursor: pointer;
+}
 
 /* HOME */
 
@@ -92,3 +161,38 @@
 /* Code here */
 
 /* CONTACT */
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--grey);
+    text-align: center;
+    font-family: var(--font-sub-headings);
+    font-size: 1.2vw;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-icons-container {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+footer h2 {
+    margin-top: 1vh;
+}
+
+#footer-icons-container img {
+    width: auto;
+    height: 4vh;
+}
+
+/* FOOTER */
