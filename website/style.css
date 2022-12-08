@@ -307,6 +307,20 @@ iframe {
     background:black;
 }
 
+.contactContainer{ /*Form background container*/
+    box-sizing: border-box;
+    position: absolute;
+    top:22%;
+    left:30%;
+    width: 45vw;
+    height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#383737;
+    border-radius: 11px 11px 11px;
+}
+
 /* Code here */
 
 /* CONTACT */
