@@ -399,6 +399,30 @@ input[type=submit]:hover { /*changes submit background color*/
     color: white;
     padding: 10px;
 }
+
+#dogContainer{ /*Background container for the dog image*/
+    position: relative;
+    /* top: 0vh;
+    left: 20vh; */
+    height: 57vh;
+    width: 23vw;
+    background-color:var(--yellow);
+    display:flex;
+    flex-direction: column;
+
+}
+
+#dogContainer img{/*dog picture*/
+    position: absolute;
+    bottom:0;
+    right: 0;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+}
 /* Code here */
 
 /* CONTACT */
