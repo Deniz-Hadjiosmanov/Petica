@@ -328,6 +328,72 @@ iframe {
     width: 23vw;
 }
 
+input[type=text], select{ /*text input area*/
+    position: relative;
+    top: 25vh;
+    left: 4vh;
+    margin-top: -17px;
+    background: #313131ea;
+    border-radius: 11px 11px 11px;
+    margin-bottom: 11px;
+    padding: 11px;
+    color:white;
+    width:14vh;
+}
+
+input[type=email], select{/*email input area*/
+    position: relative;
+    top: 25vh;
+    left: 5vh;
+    margin-top: -17px;
+    background: #313131ea;
+    border-radius: 11px 11px 11px;
+    margin-bottom: 11px;
+    padding: 11px;
+    color:white;
+    width: 15vh;
+}
+
+.textArea{ /*textarea input area*/
+    position:relative;
+    display: flex;
+    top: 25vh;
+    left: 4vh;
+    padding: 5px 5px;
+    width: 275px;
+    height: 93px;
+    border: 1px solid #707070;
+    border-radius: 11px 11px 11px;
+    background-color: #313131ea;
+    color:white;
+    line-height: 1.4;
+    resize:none;
+    font-size: 14px;
+    padding: 2px 2px;
+  }
+  
+.textArea:hover{ /*changes textarea background color*/
+    background-color:#373737e6;
+}
+
+input[type=submit]{ /*sumbit button*/
+    position: relative;
+    top: 29px;
+    left:0;
+    padding: 7px 126px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#FFC800;
+    border-radius: 13px 13px 13px;
+    margin: auto;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    font-size: 16px;
+}
+
+input[type=submit]:hover { /*changes submit background color*/
+    background-color: rgb(144, 234, 246);
+}
 /* Code here */
 
 /* CONTACT */
