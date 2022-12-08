@@ -321,7 +321,7 @@ iframe {
     border-radius: 11px 11px 11px;
 }
 
-.contactForm{/*parent body of name,email,textarea*/
+.contactForm{ /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
     display:flex;
     flex-flow: row wrap;
     height: 57vh;
