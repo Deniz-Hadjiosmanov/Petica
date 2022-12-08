@@ -45,6 +45,26 @@ body {
     color: var(--black);
 }
 
+#nav-bar2 { /*this is for all the other pages, excluding tips and home*/
+    background-color: #FFC800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 1.6vw;
+    list-style-type: none;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+
+#nav-bar2 li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 #logo {
     flex: 0.7;
 }
