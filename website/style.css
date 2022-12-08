@@ -301,6 +301,11 @@ iframe {
 
 
 /* CONTACT */
+#home-top-viewContacts { /*Contact page background*/
+    width: 100vw;
+    height: 87vh;
+    background:black;
+}
 
 /* Code here */
 
