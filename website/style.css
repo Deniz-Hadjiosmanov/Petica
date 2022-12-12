@@ -321,6 +321,63 @@ iframe {
     border-radius: 11px 11px 11px;
 }
 
+.formHeading h1{ /*Main heading for the contacts form*/
+    position: absolute;
+    top: 7vh;
+    left: 8vh;
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+}
+
+.formAddress h2{ /*Address text*/
+    position: absolute;
+    top: 12vh;
+    left: 8.5vh;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+}
+
+.formAddress img{ /*address icon*/
+    position: absolute;
+    height: 4%;
+    width: 2%;
+    top: 12vh;
+    left: 5.5vh;
+}
+
+.formNumber1 h2{ /*homeNumber text*/
+    position: absolute;
+    top: 16vh;
+    left: 8.5vh;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+}
+
+.formNumber1 img{/*homeNumber icon*/
+    position: absolute;
+    height: 4%;
+    width: 2%;
+    top: 16vh;
+    left: 5.5vh;
+}
+
+.formNumber2 h2{ /*phoneNumber text*/
+    position: absolute;
+    top: 20vh;
+    left: 8.5vh;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+}
+
+.formNumber2 img{ /*phoneNumber icon*/
+    position: absolute;
+    height: 4%;
+    width: 2%;
+    top: 20vh;
+    left: 5.4vh;
+    
+}
+
 .contactForm{ /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
     display:flex;
     flex-flow: row wrap;
