@@ -323,8 +323,8 @@ iframe {
 
 .formHeading h1{ /*Main heading for the contacts form*/
     position: absolute;
-    top: 7vh;
-    left: 8vh;
+    top: 0vh;
+    left: 1vh;
     font-size: 1.6em;
     color: rgb(255, 255, 255);
 }
