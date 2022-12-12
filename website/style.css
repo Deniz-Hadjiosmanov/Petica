@@ -76,7 +76,94 @@ body {
     height: auto;
 }
 
-/* HEADER DEV<<<<<< */
+/* HEADER */
+
+
+
+/* HAMBURGER MENU */
+
+
+#hamburger-menu {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-menu div {
+    width: 2rem;
+    height: .2rem;
+    background-color: var(--color-black);
+    transition: 0.4s;
+}
+
+#responsive-logo {
+    display: none;
+}
+
+.open .line1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .line2 {
+    opacity: 0;
+}
+
+.open .line3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .responsive-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: -1;
+}
+
+.lines,
+.line1,
+.line2,
+.line3 {
+    margin: 6px 0;
+    transition: 0.4s;
+    display: block;
+    z-index: 3;
+}
+
+.responsive-menu {
+    display: none;
+    position: absolute;
+    background: var(--color-green);
+    height: 100vh;
+    width: 12rem;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 1;
+    transition: 1s;
+    padding-top: 3.5rem;
+    list-style: none;
+}
+
+.responsive-menu li {
+    padding-bottom: 1.3rem;
+}
+
+.responsive-menu a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font-headings);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+/* HAMBURGER MENU */
 
 
 
@@ -301,27 +388,30 @@ iframe {
 
 
 /* CONTACT */
-#home-top-viewContacts { /*Contact page background*/
+#home-top-viewContacts {
+    /*Contact page background*/
     width: 100vw;
     height: 87vh;
-    background:black;
+    background: black;
 }
 
-.contactContainer{ /*Form background container*/
+.contactContainer {
+    /*Form background container*/
     box-sizing: border-box;
     position: absolute;
-    top:22%;
-    left:30%;
+    top: 22%;
+    left: 30%;
     width: 45vw;
     height: 60vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#383737;
+    background-color: #383737;
     border-radius: 11px 11px 11px;
 }
 
-.formHeading h1{ /*Main heading for the contacts form*/
+.formHeading h1 {
+    /*Main heading for the contacts form*/
     position: absolute;
     top: 0vh;
     left: 1vh;
@@ -329,7 +419,8 @@ iframe {
     color: rgb(255, 255, 255);
 }
 
-.formAddress h2{ /*Address text*/
+.formAddress h2 {
+    /*Address text*/
     position: absolute;
     top: 12vh;
     left: 8.5vh;
@@ -337,7 +428,8 @@ iframe {
     color: rgb(255, 255, 255);
 }
 
-.formAddress img{ /*address icon*/
+.formAddress img {
+    /*address icon*/
     position: absolute;
     height: 4%;
     width: 2%;
@@ -345,7 +437,8 @@ iframe {
     left: 5.5vh;
 }
 
-.formNumber1 h2{ /*homeNumber text*/
+.formNumber1 h2 {
+    /*homeNumber text*/
     position: absolute;
     top: 16vh;
     left: 8.5vh;
@@ -353,7 +446,8 @@ iframe {
     color: rgb(255, 255, 255);
 }
 
-.formNumber1 img{/*homeNumber icon*/
+.formNumber1 img {
+    /*homeNumber icon*/
     position: absolute;
     height: 4%;
     width: 2%;
@@ -361,7 +455,8 @@ iframe {
     left: 5.5vh;
 }
 
-.formNumber2 h2{ /*phoneNumber text*/
+.formNumber2 h2 {
+    /*phoneNumber text*/
     position: absolute;
     top: 20vh;
     left: 8.5vh;
@@ -369,23 +464,27 @@ iframe {
     color: rgb(255, 255, 255);
 }
 
-.formNumber2 img{ /*phoneNumber icon*/
+.formNumber2 img {
+    /*phoneNumber icon*/
     position: absolute;
     height: 4%;
     width: 2%;
     top: 20vh;
     left: 5.4vh;
-    
+
 }
 
-.contactForm{ /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
-    display:flex;
+.contactForm {
+    /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
+    display: flex;
     flex-flow: row wrap;
     height: 57vh;
     width: 23vw;
 }
 
-input[type=text], select{ /*text input area*/
+input[type=text],
+select {
+    /*text input area*/
     position: relative;
     top: 25vh;
     left: 4vh;
@@ -394,11 +493,13 @@ input[type=text], select{ /*text input area*/
     border-radius: 11px 11px 11px;
     margin-bottom: 11px;
     padding: 11px;
-    color:white;
-    width:14vh;
+    color: white;
+    width: 14vh;
 }
 
-input[type=email], select{/*email input area*/
+input[type=email],
+select {
+    /*email input area*/
     position: relative;
     top: 25vh;
     left: 5vh;
@@ -407,12 +508,13 @@ input[type=email], select{/*email input area*/
     border-radius: 11px 11px 11px;
     margin-bottom: 11px;
     padding: 11px;
-    color:white;
+    color: white;
     width: 15vh;
 }
 
-.textArea{ /*textarea input area*/
-    position:relative;
+.textArea {
+    /*textarea input area*/
+    position: relative;
     display: flex;
     top: 25vh;
     left: 4vh;
@@ -422,56 +524,62 @@ input[type=email], select{/*email input area*/
     border: 1px solid #707070;
     border-radius: 11px 11px 11px;
     background-color: #313131ea;
-    color:white;
+    color: white;
     line-height: 1.4;
-    resize:none;
+    resize: none;
     font-size: 14px;
     padding: 2px 2px;
-  }
-  
-.textArea:hover{ /*changes textarea background color*/
-    background-color:#373737e6;
 }
 
-input[type=submit]{ /*submit button*/
+.textArea:hover {
+    /*changes textarea background color*/
+    background-color: #373737e6;
+}
+
+input[type=submit] {
+    /*submit button*/
     position: relative;
     top: 28vh;
-    left:4vh;
+    left: 4vh;
     padding: 7px 126px;
     border: 1px solid rgb(0, 0, 0);
-    background-color:#FFC800;
+    background-color: #FFC800;
     border-radius: 13px 13px 13px;
     margin: auto;
     text-decoration: none;
     cursor: pointer;
-    color:black;
+    color: black;
     font-size: 16px;
 }
 
-input[type=submit]:hover { /*changes submit background color*/
+input[type=submit]:hover {
+    /*changes submit background color*/
     background-color: rgb(144, 234, 246);
 }
 
-::placeholder{ /*changes the textarea color text*/
+::placeholder {
+    /*changes the textarea color text*/
     color: white;
     padding: 10px;
 }
 
-#dogContainer{ /*Background container for the dog image*/
+#dogContainer {
+    /*Background container for the dog image*/
     position: relative;
     /* top: 0vh;
     left: 20vh; */
     height: 57vh;
     width: 23vw;
-    background-color:var(--yellow);
-    display:flex;
+    background-color: var(--yellow);
+    display: flex;
     flex-direction: column;
 
 }
 
-#dogContainer img{/*dog picture*/
+#dogContainer img {
+    /*dog picture*/
     position: absolute;
-    bottom:0;
+    bottom: 0;
     right: 0;
     display: flex;
     align-items: right;
@@ -480,6 +588,7 @@ input[type=submit]:hover { /*changes submit background color*/
     width: 80%;
     flex-direction: column;
 }
+
 /* Code here */
 
 /* CONTACT */
@@ -518,3 +627,35 @@ footer h2 {
 }
 
 /* FOOTER */
+
+
+
+/* RESPONSIVE PART */
+
+@media only screen and (max-width: 769px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    #hamburger-menu {
+        display: block;
+        margin-right: 2vw;
+    }
+
+    #responsive-logo {
+        display: block;
+        margin-left: 2vw;
+        width: 10vw;
+    }
+
+    #responsive-logo img {
+        width: 10vw;
+        height: auto;
+    }
+}
+
+/* RESPONSIVE PART */
