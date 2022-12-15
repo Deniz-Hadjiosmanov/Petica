@@ -15,35 +15,46 @@
             <nav>
                 <ul id="nav-bar2">
                     <li id="logo"><a href="index.html"><img src="images/Logo-03.svg"></a></li>
-                    <li><a href="suggestor.html"><img src="images/">Suggestor</a></li>
-                    <li><a href="shops.html">Pet Shops</a></li>
-                    <li><a href="advice.html">Advice</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <div class=" hamburger"></div>
+                    <li class="nav-buttons"><a href="suggestor.html">Suggestor</a></li>
+                    <li class="nav-buttons"><a href="shops.html">Pet Shops</a></li>
+                    <li class="nav-buttons"><a href="advice.html">Advices</a></li>
+                    <li class="nav-buttons"><a href="about.html">About</a></li>
+                    <li class="nav-buttons"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <section class="contactContainer">
             <!-- different classes for the icons and different headings -->
-            <div class="formHeading"><h1>Get in Touch</h1></div>
-            <div class="formAddress"><h2>Rachelsmolen 1, 5612 MA Eindhoven</h2><img src="images/location.png"></div>
-            <div class="formNumber1"><h2>+31 101010123</h2><img src="images/phone.png"></div>
-            <div class="formNumber2"><h2>+31 232103212</h2><img src="images/mobilePhone.png"></div>
+            <div class="formHeading">
+                <h1>Get in Touch</h1>
+            </div>
+            <div class="formAddress">
+                <h2>Rachelsmolen 1, 5612 MA Eindhoven</h2><img src="images/location.png">
+            </div>
+            <div class="formNumber1">
+                <h2>+31 101010123</h2><img src="images/phone.png">
+            </div>
+            <div class="formNumber2">
+                <h2>+31 232103212</h2><img src="images/mobilePhone.png">
+            </div>
             <!-- body for the name, email, and textarea -->
-              <div class="contactForm" id="contactForm">
-             <form>
-                <input type="text" id="username" name="username" placeholder="Name" required="">
-        
-                <input type="email" id="email" name="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
-    
-                <textarea class="textArea" id="textarea" placeholder="Enter your message here..." required=""></textarea>
-                <input type="submit" value="submit" onclick="submitMessage()">
-            </form>
+            <div class="contactForm" id="contactForm">
+                <form>
+                    <input type="text" id="username" name="username" placeholder="Name" required="">
 
-               </div>
-               <div id="dogContainer"> <!--yellow background for the dog picture-->
-                    <img src="images/Tdog.png"></a> <!--dog png picture -->
-               </div>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required
+                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
+
+                    <textarea class="textArea" id="textarea" placeholder="Enter your message here..."
+                        required=""></textarea>
+                    <input type="submit" value="submit" onclick="submitMessage()">
+                </form>
+
+            </div>
+            <div id="dogContainer"> <!--yellow background for the dog picture-->
+                <img src="images/Tdog.png"></a> <!--dog png picture -->
+            </div>
         </section>
     </section>
 
@@ -57,7 +68,7 @@
 
     </footer>
 
-   
+
 </body>
 
 </html>
