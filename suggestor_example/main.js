@@ -1,3 +1,4 @@
+
 // create a Quiz class
 class Quiz {
     constructor(questions) {
@@ -8,7 +9,7 @@ class Quiz {
         //refer to question index
         this.questionIndex = 0;
     }
-
+ 
     getQuestionIndex() {
         return this.questions[this.questionIndex];
     }
@@ -66,7 +67,9 @@ function guess(id, guess) {
     let button = document.getElementById(id);
     button.onclick = function() {
         quiz.guess(guess);
-        displayQuestion();
+         displayQuestion();
+        pictureChange();
+
     }
 };
 
@@ -120,30 +123,67 @@ function showScores() {
     }
 };
 
+var image = document.getElementById('myImage');
+
+function pictureChange(){
+    let currentQuestionNumber = quiz.questionIndex + 1;
+    console.log(currentQuestionNumber)
+    // if(currentQuestionNumber == 1){
+    //     image.src = "step.png";
+    // }
+    // else if(currentQuestionNumber == 2)
+    // {    image.src = "step1.png";}
+    // else if(currentQuestionNumber == 3)
+    // {    image.src = "step2.png";}
+    // else if(currentQuestionNumber == 4)
+    // {    image.src = "step3.png";}
+    // else if(currentQuestionNumber == 5)
+    // {    image.src = "step4.png";}
+    // else{
+    //     image.src = "step.png";
+    // }
+}
+
 // create questions here
 let questions = [
     new Question(
-        "How often do you clean?", ["1 time per week", "2-3 times per week", "Every day", "I do not clean"], "2-3 times per week"
+        "", ["1 time per week", "2-3 times per week", "Every day", "I do not clean"], "2-3 times per week"
     ),
     new Question(
-        "How often do you go for walks?", ["Once a week", "Once a month", "Every day", "3-4 times per week"], "Every day"
+        "", ["Once a week", "Once a month", "Every day", "3-4 times per week"], "Every day"
     ),
     new Question(
-        "What is your home like?", ["I have plenty of space in my home, plus a backyard.", "Cozy, with an abundance of sunny windowsills.", "Pretty fly, with plenty of perches.", "It is perfect for me, but I am not so sure I want a pet roaming around…"], "I have plenty of space in my home, plus a backyard."
+        "", ["I have plenty of space in my home, plus a backyard.", "Cozy, with an abundance of sunny windowsills.", "Pretty fly, with plenty of perches.", "It is perfect for me, but I am not so sure I want a pet roaming around…"], "I have plenty of space in my home, plus a backyard."
     ),
     new Question(
-        "What does your pet budget look like?", ["Healthy. I can afford both routine and unexpected costs, if necessary.", "Basic. I can afford start-up supplies and inexpensive recurring costs.", "Pretty good, but I would like to avoid any major expenses.", "After the initial costs for a habitat and supplies, I would like to spend very little."], "Healthy. I can afford both routine and unexpected costs, if necessary."
+        "", ["Healthy. I can afford both routine and unexpected costs, if necessary.", "Basic. I can afford start-up supplies and inexpensive recurring costs.", "Pretty good, but I would like to avoid any major expenses.", "After the initial costs for a habitat and supplies, I would like to spend very little."], "Healthy. I can afford both routine and unexpected costs, if necessary."
     ),
     new Question(
-        "How much training are you willing to do?", ["As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet.", "I would prefer a pet that does not require any training. ", "I am not against training, but I was not planning on it.", "A little bit. Tricks sound especially fun!"], "As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet."
+        "", ["As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet.", "I would prefer a pet that does not require any training. ", "I am not against training, but I was not planning on it.", "A little bit. Tricks sound especially fun!"], "As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet."
     )
 ];
+
+
+
+//Changes the piture each question
+function pictureChange(){
+    document.querySelector('#myImage').setAttribute("src",`steps/step${quiz.questionIndex+1}.png`)
+
+}
+
+
+
+
 //index comparing insted the string^
 
 // INITIALIZE quiz
 let quiz = new Quiz(questions);
 
 // display questions
+pictureChange();
+
 displayQuestion();
 
 
+
+    
