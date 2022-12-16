@@ -23,8 +23,8 @@ body {
 /* HEADER */
 
 #home-top-view {
-    width: 100%;
-    height: auto;
+    width: 99vw;
+    height: 87vh;
 }
 
 #nav-bar {
@@ -76,84 +76,12 @@ body {
     height: auto;
 }
 
-/* HEADER */
-
-
-
-/* HAMBURGER MENU */
-
-.hamburger {
-    position: relative;
-    width: 30px;
-    height: 4px;
-    background: var(--black);
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 3;
-    transition: 0.3s;
-}
-
-.hamburger:before,
-.hamburger:after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    right: 0;
-    background: var(--black);
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.hamburger:before {
-    top: -10px;
-    width: 20px;
-}
-
-.hamburger:after {
-    top: 10px;
-    width: 25px;
-}
-
-.toggle-menu {
-    position: absolute;
-    width: 30vw;
-    height: 100vh;
-    z-index: 3;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.hamburger,
-.toggle-menu {
-    display: none;
-}
-
-#hamburger-button:checked~.hamburger {
-    background: transparent;
-}
-
-#hamburger-button:checked~.hamburger:before {
-    top: 0;
-    transform: rotate(-45deg);
-    width: 30px;
-}
-
-#hamburger-button:checked .hamburger:after {
-    top: 0;
-    transform: rotate (45deg);
-    width: 30px;
-}
-
-#hamburger-button:checked~.nav-buttons {
-    right: 0;
-    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
-}
-
-/* HAMBURGER MENU */
+/* HEADER DEV<<<<<< */
 
 
 
 /* HOME */
+
 
 #home-background-container {
     position: absolute;
@@ -161,12 +89,14 @@ body {
     align-items: center;
     flex-direction: row;
     width: 100vw;
+    height: auto;
     top: 0vh;
     z-index: -1;
 }
 
 #home-dog {
     width: 100vw;
+    height: auto;
 }
 
 #home-background-container h2 {
@@ -187,8 +117,8 @@ body {
 #home-pet-choice {
     display: flex;
     flex-direction: column;
-    margin-top: 24rem;
     width: 99vw;
+    height: auto;
     align-items: center;
 }
 
@@ -225,7 +155,6 @@ body {
 
 
 /* PET SHOPS */
-
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 6vh;
@@ -242,6 +171,8 @@ iframe {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Code here */
 
 /* PET SHOPS */
 
@@ -283,8 +214,8 @@ iframe {
 #advice-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 24rem;
+    width: 99vw;
+    height: auto;
     align-items: center;
 }
 
@@ -356,174 +287,48 @@ iframe {
     text-align: center;
 }
 
+
 /* TIPS */
 
 
 
 /* ABOUT */
 
-.about-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.background-container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-}
-
-.about-container {
-    width: 75%;
-    min-height: 80vh;
-
-    background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-
-}
-
-.about-Photo {
-    width: 60vh;
-    height: 40vh;
-    border-bottom: solid var(--grey) 12vh;
-    background-color: var(--yellow);
-    border-radius: 0 0 10% 10%;
-    position: relative;
-}
-
-.about-Photo img {
-    width: 35vh;
-    height: 35vh;
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
-
-.text-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 22px;
-    padding-left: 30px;
-}
-
-.text-container h1 {
-    font-size: 70px;
-    padding: 20px 0px;
-}
+/* Code here */
 
 /* ABOUT */
 
 
 
 /* CONTACT */
-
-#home-top-viewContacts {
-    /*Contact page background*/
+#home-top-viewContacts { /*Contact page background*/
     width: 100vw;
     height: 87vh;
-    background: black;
+    background:black;
 }
 
-.contactContainer {
-    /*Form background container*/
+.contactContainer{ /*Form background container*/
     box-sizing: border-box;
     position: absolute;
-    top: 22%;
-    left: 30%;
+    top:22%;
+    left:30%;
     width: 45vw;
     height: 60vh;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #383737;
+    background-color:#383737;
     border-radius: 11px 11px 11px;
 }
 
-.formHeading h1 {
-    /*Main heading for the contacts form*/
-    position: absolute;
-    top: 0vh;
-    left: 1vh;
-    font-size: 1.6em;
-    color: rgb(255, 255, 255);
-}
-
-.formAddress h2 {
-    /*Address text*/
-    position: absolute;
-    top: 12vh;
-    left: 8.5vh;
-    font-size: 0.9em;
-    color: rgb(255, 255, 255);
-}
-
-.formAddress img {
-    /*address icon*/
-    position: absolute;
-    height: 4%;
-    width: 2%;
-    top: 12vh;
-    left: 5.5vh;
-}
-
-.formNumber1 h2 {
-    /*homeNumber text*/
-    position: absolute;
-    top: 16vh;
-    left: 8.5vh;
-    font-size: 0.9em;
-    color: rgb(255, 255, 255);
-}
-
-.formNumber1 img {
-    /*homeNumber icon*/
-    position: absolute;
-    height: 4%;
-    width: 2%;
-    top: 16vh;
-    left: 5.5vh;
-}
-
-.formNumber2 h2 {
-    /*phoneNumber text*/
-    position: absolute;
-    top: 20vh;
-    left: 8.5vh;
-    font-size: 0.9em;
-    color: rgb(255, 255, 255);
-}
-
-.formNumber2 img {
-    /*phoneNumber icon*/
-    position: absolute;
-    height: 4%;
-    width: 2%;
-    top: 20vh;
-    left: 5.4vh;
-
-}
-
-.contactForm {
-    /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
-    display: flex;
+.contactForm{ /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
+    display:flex;
     flex-flow: row wrap;
     height: 57vh;
     width: 23vw;
 }
 
-input[type=text],
-select {
-    /*text input area*/
+input[type=text], select{ /*text input area*/
     position: relative;
     top: 25vh;
     left: 4vh;
@@ -532,13 +337,11 @@ select {
     border-radius: 11px 11px 11px;
     margin-bottom: 11px;
     padding: 11px;
-    color: white;
-    width: 14vh;
+    color:white;
+    width:14vh;
 }
 
-input[type=email],
-select {
-    /*email input area*/
+input[type=email], select{/*email input area*/
     position: relative;
     top: 25vh;
     left: 5vh;
@@ -547,13 +350,12 @@ select {
     border-radius: 11px 11px 11px;
     margin-bottom: 11px;
     padding: 11px;
-    color: white;
+    color:white;
     width: 15vh;
 }
 
-.textArea {
-    /*textarea input area*/
-    position: relative;
+.textArea{ /*textarea input area*/
+    position:relative;
     display: flex;
     top: 25vh;
     left: 4vh;
@@ -563,62 +365,56 @@ select {
     border: 1px solid #707070;
     border-radius: 11px 11px 11px;
     background-color: #313131ea;
-    color: white;
+    color:white;
     line-height: 1.4;
-    resize: none;
+    resize:none;
     font-size: 14px;
     padding: 2px 2px;
+  }
+  
+.textArea:hover{ /*changes textarea background color*/
+    background-color:#373737e6;
 }
 
-.textArea:hover {
-    /*changes textarea background color*/
-    background-color: #373737e6;
-}
-
-input[type=submit] {
-    /*submit button*/
+input[type=submit]{ /*sumbit button*/
     position: relative;
-    top: 28vh;
-    left: 4vh;
+    top: 29px;
+    left:0;
     padding: 7px 126px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: #FFC800;
+    background-color:#FFC800;
     border-radius: 13px 13px 13px;
     margin: auto;
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color:black;
     font-size: 16px;
 }
 
-input[type=submit]:hover {
-    /*changes submit background color*/
+input[type=submit]:hover { /*changes submit background color*/
     background-color: rgb(144, 234, 246);
 }
 
-::placeholder {
-    /*changes the textarea color text*/
+::placeholder{ /*changes the textarea color text*/
     color: white;
     padding: 10px;
 }
 
-#dogContainer {
-    /*Background container for the dog image*/
+#dogContainer{ /*Background container for the dog image*/
     position: relative;
     /* top: 0vh;
     left: 20vh; */
     height: 57vh;
     width: 23vw;
-    background-color: var(--yellow);
-    display: flex;
+    background-color:var(--yellow);
+    display:flex;
     flex-direction: column;
 
 }
 
-#dogContainer img {
-    /*dog picture*/
+#dogContainer img{/*dog picture*/
     position: absolute;
-    bottom: 0;
+    bottom:0;
     right: 0;
     display: flex;
     align-items: right;
@@ -627,6 +423,7 @@ input[type=submit]:hover {
     width: 80%;
     flex-direction: column;
 }
+/* Code here */
 
 /* CONTACT */
 
@@ -664,111 +461,3 @@ footer h2 {
 }
 
 /* FOOTER */
-
-
-
-/* RESPONSIVE PART */
-
-@media screen and (max-width: 1100px) {
-    .text-container h1 {
-        font-size: 40px;
-        padding: 10px 0px;
-        text-align: center;
-    }
-
-    .about-Photo {
-        width: 40vh;
-        height: 30vh;
-        border-bottom: solid var(--grey) 6vh;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    #home-pet-choice {
-        margin-top: 15rem;
-    }
-
-    .home-row {
-        margin-top: 0;
-    }
-}
-
-@media only screen and (max-width: 821px) {
-    /*.nav-buttons {
-        display: none;
-    }*/
-
-    #nav-bar,
-    #nav-bar2 {
-        justify-content: space-around;
-    }
-
-    .hamburger,
-    .toggle-menu {
-        display: block;
-    }
-
-    .nav-buttons {
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        background: var(--yellow);
-        width: 300px;
-        height: 100%;
-        padding-top: 65px;
-    }
-
-    .nav-buttons li {
-        width: 100%;
-    }
-
-    .nav-buttons li a,
-    .nav-buttons li a:hover {
-        padding: 30px;
-        font-size: 24px;
-        box-shadow: 0 1px rgba(255, 255, 255, 0.1) inset;
-    }
-
-    #home-pet-choice {
-        margin-top: 10rem;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .text-container h1 {
-        font-size: 40px;
-        padding: 10px 0px;
-        text-align: center;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .about-Photo {
-        width: 30vh;
-        height: 20vh;
-        border-bottom: solid var(--grey) 6vh;
-    }
-
-    .about-Photo img {
-        width: 16vh;
-        height: 16vh;
-    }
-
-    .text-container {
-        text-align: justify;
-        text-justify: inter-word;
-    }
-
-    #home-pet-choice {
-        margin-top: 5rem;
-    }
-}
-
-/* RESPONSIVE PART */
