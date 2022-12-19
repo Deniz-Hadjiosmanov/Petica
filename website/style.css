@@ -241,6 +241,7 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: url("images/paw.png"), auto;
 }
 
 /* PET SHOPS */
