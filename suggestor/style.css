@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    /* Colors */
+    --yellow: #FFC800;
+    --black: #121212;
+    --grey: #373737;
+    --white: #FEFEFE;
+    /* Fonts */
+    --font-headings: "Noto Sans";
+    --font-call-to-action: "Noto Sans";
+    --font-sub-headings: "Muli";
+    --font-text: "Muli";
+}
+
+/* HEADER */
+
+#home-top-view {
+    width: 99vw;
+    height: 87vh;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 1.6vw;
+    list-style-type: none;
+    justify-content: space-around;
+    z-index: 1;
+    background-color:#FFC800
+}
+
+#nav-bar li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#nav-bar2 {
+    /*this is for all the other pages, excluding tips and home*/
+    background-color: #FFC800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 1.6vw;
+    list-style-type: none;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+
+#nav-bar2 li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#logo {
+    flex: 0.7;
+}
+
+#logo img {
+    min-width: 10vw;
+    width: 10vw;
+    height: auto;
+}
+
+/* HEADER DEV<<<<<< */
+
+
+
+/* HOME */
+
+
+#home-background-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    top: 0vh;
+    z-index: -1;
+}
+
+#home-dog {
+    width: 100vw;
+    height: auto;
+}
+
+#home-background-container h2 {
+    position: absolute;
+    text-transform: uppercase;
+    right: 20vw;
+    font-size: 3vw;
+    font-family: var(--font-headings);
+    text-align: center;
+}
+
+#home-background-container h2 a {
+    color: var(--white);
+    font-size: 6vw;
+    text-decoration: none;
+}
+
+#home-pet-choice {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: auto;
+    align-items: center;
+}
+
+#home-pet-choice h1 {
+    text-align: center;
+    font-family: var(--font-headings);
+    font-size: 4vw;
+}
+
+.home-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    width: 80vw;
+}
+
+.home-row img {
+    width: 30vw;
+    height: auto;
+    cursor: pointer;
+}
+
+/* HOME */
+
+
+/* PET SUGGESTOR */
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin-top: -66vh;
+}
+
+
+.quiz-box{
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 5rem 5rem 5rem;
+    border-radius:5px ;
+
+}
+
+.quiz-box h2{
+    background-color:rgb(0, 200, 255);
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+}
+
+.quiz-header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.quiz-header #progress{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+.quiz-box #question{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.buttons{
+    margin: 1.5rem 0 4rem 0;
+}
+
+.btn{
+    text-align: left;
+    background-color: blanchedalmond;
+    width: 100%;
+    font-size: 1.8rem;;
+    color: black;
+    border: 1px solid bisque;
+    margin: 7px 0;
+    padding: 1rem;
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+.btn:active{
+    background-color: rgb(43, 226, 89);
+}
+
+#score{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.quiz-repeat{
+    text-align: center;
+    margin: 0 auto;
+}
+.quiz-repeat a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: wheat;
+    text-decoration: none;
+    background-color: orangered;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.quiz-repeat a:hover{
+    background-color: orangered;
+}
+
+#nav-bar {
+    background-color:#FFC800
+}
+#images{
+    text-align: center;
+}
+.hidden { display: none; }
+
+
+/* PET SUGGESTOR */
+
+
+
+/* PET SHOPS */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vh;
+    text-align: center;
+    margin: 3rem;
+}
+
+iframe {
+    /* margin: auto;
+    width: 50%; */
+    border: 6px solid #FFC800;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Code here */
+
+/* PET SHOPS */
+
+
+
+/* TIPS */
+
+#advice-background-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    top: 0vh;
+    z-index: -1;
+}
+
+#advice-background-img {
+    width: 100vw;
+    height: auto;
+}
+
+#advice-background-container h2 {
+    position: absolute;
+    text-transform: uppercase;
+    right: 20vw;
+    font-size: 3vw;
+    font-family: var(--font-headings);
+    text-align: center;
+}
+
+#advice-background-container h2 a {
+    color: var(--white);
+    font-size: 6vw;
+    text-decoration: none;
+}
+
+#advice-container {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: auto;
+    align-items: center;
+}
+
+#advice-container h1 {
+    text-align: center;
+    font-family: var(--font-headings);
+    font-size: 4vw;
+}
+
+.advice-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    width: 80vw;
+}
+
+.advice-row img {
+    width: 30vw;
+    height: auto;
+}
+
+.advice-row img:hover {
+    cursor: pointer;
+}
+
+
+/*hover over img */
+.container {
+    position: relative;
+    width: 78vw;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--yellow);
+    border-radius: 2.5vw;
+}
+
+.container:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.text {
+    color: black;
+    font-size: 1.15vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* TIPS */
+
+
+
+/* ABOUT */
+
+/* Code here */
+
+/* ABOUT */
+
+
+
+/* CONTACT */
+#home-top-viewContacts { /*Contact page background*/
+    width: 100vw;
+    height: 87vh;
+    background:black;
+}
+
+.contactContainer{ /*Form background container*/
+    box-sizing: border-box;
+    position: absolute;
+    top:22%;
+    left:30%;
+    width: 45vw;
+    height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#383737;
+    border-radius: 11px 11px 11px;
+}
+
+.contactForm{ /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
+    display:flex;
+    flex-flow: row wrap;
+    height: 57vh;
+    width: 23vw;
+}
+
+input[type=text], select{ /*text input area*/
+    position: relative;
+    top: 25vh;
+    left: 4vh;
+    margin-top: -17px;
+    background: #313131ea;
+    border-radius: 11px 11px 11px;
+    margin-bottom: 11px;
+    padding: 11px;
+    color:white;
+    width:14vh;
+}
+
+input[type=email], select{/*email input area*/
+    position: relative;
+    top: 25vh;
+    left: 5vh;
+    margin-top: -17px;
+    background: #313131ea;
+    border-radius: 11px 11px 11px;
+    margin-bottom: 11px;
+    padding: 11px;
+    color:white;
+    width: 15vh;
+}
+
+.textArea{ /*textarea input area*/
+    position:relative;
+    display: flex;
+    top: 25vh;
+    left: 4vh;
+    padding: 5px 5px;
+    width: 275px;
+    height: 93px;
+    border: 1px solid #707070;
+    border-radius: 11px 11px 11px;
+    background-color: #313131ea;
+    color:white;
+    line-height: 1.4;
+    resize:none;
+    font-size: 14px;
+    padding: 2px 2px;
+  }
+  
+.textArea:hover{ /*changes textarea background color*/
+    background-color:#373737e6;
+}
+
+input[type=submit]{ /*sumbit button*/
+    position: relative;
+    top: 29px;
+    left:0;
+    padding: 7px 126px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#FFC800;
+    border-radius: 13px 13px 13px;
+    margin: auto;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    font-size: 16px;
+}
+
+input[type=submit]:hover { /*changes submit background color*/
+    background-color: rgb(144, 234, 246);
+}
+
+::placeholder{ /*changes the textarea color text*/
+    color: white;
+    padding: 10px;
+}
+
+#dogContainer{ /*Background container for the dog image*/
+    position: relative;
+    /* top: 0vh;
+    left: 20vh; */
+    height: 57vh;
+    width: 23vw;
+    background-color:var(--yellow);
+    display:flex;
+    flex-direction: column;
+
+}
+
+#dogContainer img{/*dog picture*/
+    position: absolute;
+    bottom:0;
+    right: 0;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+}
+/* Code here */
+
+/* CONTACT */
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--grey);
+    text-align: center;
+    font-family: var(--font-sub-headings);
+    font-size: 1.2vw;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-icons-container {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+footer h2 {
+    margin-top: 1vh;
+}
+
+#footer-icons-container img {
+    width: auto;
+    height: 4vh;
+}
+
+/* FOOTER */
