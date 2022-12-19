@@ -341,7 +341,7 @@ iframe {
 
 .container:hover .overlay {
     opacity: 0.9;
-    cursor: pointer;
+    cursor: url("images/paw.png"), auto;
 }
 
 .text {
