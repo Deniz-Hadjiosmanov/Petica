@@ -22,22 +22,21 @@ body {
 
 /* HEADER */
 
-#home-top-view {
-    width: 100%;
-    height: auto;
+header {
+    background-color: var(--yellow);
 }
 
 #nav-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     font-family: var(--font-headings);
     font-weight: bold;
     font-size: 1.6vw;
     list-style-type: none;
     justify-content: space-around;
-    z-index: 1;
+    z-index: auto;
 }
 
 #nav-bar li a {
@@ -51,7 +50,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     font-family: var(--font-headings);
     font-weight: bold;
     font-size: 1.6vw;
@@ -155,39 +154,36 @@ body {
 
 /* HOME */
 
-#home-background-container {
-    position: absolute;
+#home-top-view {
     display: flex;
+    position: relative;
+    width: 100%;
+    text-align: center;
     align-items: center;
-    flex-direction: row;
-    width: 100vw;
-    top: 0vh;
-    z-index: -1;
+    justify-content: center;
 }
 
 #home-dog {
-    width: 100vw;
+    width: 100%;
 }
 
-#home-background-container h2 {
+#home-top-view h2 {
     position: absolute;
-    text-transform: uppercase;
-    right: 20vw;
     font-size: 3vw;
     font-family: var(--font-headings);
-    text-align: center;
+    text-transform: uppercase;
+    margin-left: 45vw;
 }
 
-#home-background-container h2 a {
-    color: var(--white);
-    font-size: 6vw;
+#home-top-view h2 a {
     text-decoration: none;
+    color: var(--white);
 }
 
 #home-pet-choice {
     display: flex;
     flex-direction: column;
-    margin-top: 24rem;
+    margin-top: 0rem;
     width: 99vw;
     align-items: center;
 }
@@ -248,42 +244,36 @@ iframe {
 
 /* TIPS */
 
-#advice-background-container {
-    position: absolute;
+#advice-top-view {
     display: flex;
+    position: relative;
+    width: 100%;
+    text-align: center;
     align-items: center;
-    flex-direction: row;
-    width: 100vw;
-    height: auto;
-    top: 0vh;
-    z-index: -1;
+    justify-content: center;
+}
+
+#advice-top-view h2 {
+    position: absolute;
+    font-size: 5vw;
+    font-family: var(--font-headings);
+    text-transform: uppercase;
+    margin-left: 45vw;
+}
+
+#advice-top-view h2 a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 #advice-background-img {
-    width: 100vw;
-    height: auto;
-}
-
-#advice-background-container h2 {
-    position: absolute;
-    text-transform: uppercase;
-    right: 20vw;
-    font-size: 3vw;
-    font-family: var(--font-headings);
-    text-align: center;
-}
-
-#advice-background-container h2 a {
-    color: var(--white);
-    font-size: 6vw;
-    text-decoration: none;
+    width: 100%;
 }
 
 #advice-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 24rem;
     align-items: center;
 }
 
