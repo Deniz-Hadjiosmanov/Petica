@@ -666,8 +666,7 @@ footer h2 {
         display: none;
     }*/
 
-    #nav-bar,
-    #nav-bar2 {
+    #nav-bar {
         justify-content: space-around;
     }
 
