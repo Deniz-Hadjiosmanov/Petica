@@ -651,14 +651,6 @@ footer h2 {
     .about-container {
         flex-direction: column;
     }
-
-    #home-pet-choice {
-        margin-top: 15rem;
-    }
-
-    .home-row {
-        margin-top: 0;
-    }
 }
 
 @media only screen and (max-width: 821px) {
@@ -698,10 +690,6 @@ footer h2 {
         font-size: 24px;
         box-shadow: 0 1px rgba(255, 255, 255, 0.1) inset;
     }
-
-    #home-pet-choice {
-        margin-top: 10rem;
-    }
 }
 
 @media screen and (max-width: 420px) {
@@ -731,8 +719,15 @@ footer h2 {
         text-justify: inter-word;
     }
 
-    #home-pet-choice {
-        margin-top: 5rem;
+    .home-row {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        align-items: center;
+    }
+
+    .home-row img {
+        margin-bottom: 3vh;
     }
 }
 
