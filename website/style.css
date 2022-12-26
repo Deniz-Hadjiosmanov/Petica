@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -131,7 +135,7 @@ header {
 
 /* HOME */
 
-#home-top-view {
+.home-advice-top-view {
     display: flex;
     position: relative;
     width: 100%;
@@ -144,46 +148,47 @@ header {
     width: 100%;
 }
 
-#home-top-view h2 {
+.home-advice-top-view h2 {
     position: absolute;
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: var(--font-headings);
     text-transform: uppercase;
     margin-left: 45vw;
 }
 
-#home-top-view h2 a {
+.home-advice-top-view h2 a {
     text-decoration: none;
     color: var(--white);
 }
 
-#home-pet-choice {
+.home-advice-bottom-view {
     display: flex;
     flex-direction: column;
-    margin-top: 0rem;
-    width: 99vw;
+    margin-top: 0;
+    width: 100%;
     align-items: center;
 }
 
-#home-pet-choice h1 {
+.home-advice-bottom-view h1 {
     text-align: center;
     font-family: var(--font-headings);
     font-size: 4vw;
 }
 
-.home-row {
+.home-advice-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 7vh;
     margin-bottom: 7vh;
-    width: 80vw;
+    width: 80%;
 }
 
-.home-row img {
+.home-advice-cards img {
     width: 30vw;
     height: auto;
-    cursor: pointer;
+    cursor: url("images/paw.png"), auto;
 }
 
 /* HOME */
@@ -221,68 +226,17 @@ iframe {
 
 /* TIPS */
 
-#advice-top-view {
-    display: flex;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#advice-top-view h2 {
-    position: absolute;
-    font-size: 5vw;
-    font-family: var(--font-headings);
-    text-transform: uppercase;
-    margin-left: 45vw;
-}
-
-#advice-top-view h2 a {
-    text-decoration: none;
-    color: var(--white);
-}
-
 #advice-background-img {
     width: 100%;
 }
 
-#advice-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-#advice-container h1 {
-    text-align: center;
-    font-family: var(--font-headings);
-    font-size: 4vw;
-}
-
-.advice-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 7vh;
-    margin-bottom: 7vh;
-    width: 80vw;
-}
-
-.advice-row img {
-    width: 30vw;
-    height: auto;
-}
-
-.advice-row img:hover {
+.home-advice-cards img:hover {
     cursor: pointer;
 }
-
 
 /*hover over img */
 .container {
     position: relative;
-    width: 30vw;
 }
 
 .image {
@@ -292,6 +246,7 @@ iframe {
 }
 
 .overlay {
+    display: flex;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -313,13 +268,9 @@ iframe {
 .text {
     color: black;
     font-size: 1.15vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    font-family: var(--font-text);
+    text-align: justify;
+    align-self: center;
 }
 
 /* TIPS */
@@ -653,7 +604,7 @@ footer h2 {
     }
 }
 
-@media only screen and (max-width: 821px) {
+@media screen and (max-width: 821px) {
     /*.nav-buttons {
         display: none;
     }*/
@@ -690,6 +641,64 @@ footer h2 {
         font-size: 24px;
         box-shadow: 0 1px rgba(255, 255, 255, 0.1) inset;
     }
+
+    .home-advice-top-view h2 {
+        font-size: 2rem;
+    }
+
+    .home-advice-bottom-view h1 {
+        font-size: 2.3rem;
+    }
+
+    .home-advice-cards {
+        margin: 0;
+    }
+
+    .home-advice-cards img {
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+
+    .home-advice-top-view h2 {
+        font-size: 2rem;
+    }
+
+    #advice-container h1 {
+        font-size: 2.3rem;
+    }
+
+    .home-advice-cards {
+        margin: 0;
+    }
+
+    .home-advice-cards img {
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .overlay {
+        height: 89%;
+        border-radius: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .home-advice-cards img {
+        width: 20rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .overlay {
+        height: 85%;
+        border-radius: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -697,6 +706,27 @@ footer h2 {
         font-size: 40px;
         padding: 10px 0px;
         text-align: center;
+    }
+
+    .home-advice-top-view h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-advice-bottom-view h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-advice-cards img {
+        width: 15rem;
+    }
+
+    .text {
+        font-size: 0.65rem;
+    }
+
+    .overlay {
+        height: 81%;
+        border-radius: 1.2rem;
     }
 
     .about-container {
@@ -717,17 +747,6 @@ footer h2 {
     .text-container {
         text-align: justify;
         text-justify: inter-word;
-    }
-
-    .home-row {
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0;
-        align-items: center;
-    }
-
-    .home-row img {
-        margin-bottom: 3vh;
     }
 }
 
