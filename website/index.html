@@ -11,33 +11,31 @@
 
 <body>
     <header>
-        <nav>
-            <ul id="nav-bar">
-                <li id="logo"><a href="index.html"><img src="images/Logo-03.svg"></a></li>
-                <!--input type="checkbox" class="toggle-menu" id="hamburger-button"-->
-                <div class=" hamburger"></div>
-                <li class="nav-buttons"><a href="suggestor.html">Suggestor</a></li>
-                <li class="nav-buttons"><a href="shops.html">Pet Shops</a></li>
-                <li class="nav-buttons"><a href="advice.html">Advices</a></li>
-                <li class="nav-buttons"><a href="about.html">About</a></li>
-                <li class="nav-buttons"><a href="contact.html">Contact</a></li>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding"><img src="images/Logo-03.svg" id="logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home-pet-choice" class="nav-link">Suggestor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shops.html" class="nav-link">Pet Shops</a>
+                </li>
+                <li class="nav-item">
+                    <a href="advice.html" class="nav-link">Advices</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
+            <div class="hamburger" onclick="rotateHamburger()">
+                <span class="bar" id="line1"></span>
+                <span class="bar" id="line2"></span>
+                <span class="bar" id="line3"></span>
+            </div>
         </nav>
-        <!--a id="responsive-logo" href="index.html"><img src="images/Logo-03.svg"></a-->
-        <!--div id="hamburger-menu" onclick="openMobileMenu(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                <ul class="responsive-menu">
-                    <br>
-                    <br>
-                    <li><a href="suggestor.html">Suggestor</a></li>
-                    <li><a href="shops.html">Pet Shops</a></li>
-                    <li><a href="advice.html">Advices</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div-->
     </header>
     <section class="home-advice-top-view">
         <img id="home-dog" src="images/home-background.svg">
@@ -70,7 +68,7 @@
 
     </footer>
 
-
+    <script src="main.js"></script>
 </body>
 
 </html>

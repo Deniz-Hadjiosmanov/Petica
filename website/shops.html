@@ -11,15 +11,30 @@
 
 <body>
     <header>
-        <nav>
-            <ul id="nav-bar">
-                <li id="logo"><a href="index.html"><img src="images/Logo-03.svg"></a></li>
-                <li class="nav-buttons"><a href="suggestor.html">Suggestor</a></li>
-                <li class="nav-buttons"><a href="shops.html">Pet Shops</a></li>
-                <li class="nav-buttons"><a href="advice.html">Advices</a></li>
-                <li class="nav-buttons"><a href="about.html">About</a></li>
-                <li class="nav-buttons"><a href="contact.html">Contact</a></li>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding"><img src="images/Logo-03.svg" id="logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home-pet-choice" class="nav-link">Suggestor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shops.html" class="nav-link">Pet Shops</a>
+                </li>
+                <li class="nav-item">
+                    <a href="advice.html" class="nav-link">Advices</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
             </ul>
+            <div class="hamburger" onclick="rotateHamburger()">
+                <span class="bar" id="line1"></span>
+                <span class="bar" id="line2"></span>
+                <span class="bar" id="line3"></span>
+            </div>
         </nav>
     </header>
 
@@ -34,6 +49,8 @@
         </div>
 
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
