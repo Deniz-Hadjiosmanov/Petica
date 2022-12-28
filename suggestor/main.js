@@ -9,7 +9,7 @@ class Quiz {
         //refer to question index
         this.questionIndex = 0;
     }
- 
+
     getQuestionIndex() {
         return this.questions[this.questionIndex];
     }
@@ -65,9 +65,9 @@ function displayQuestion() {
 // GUESS ANSWER
 function guess(id, guess) {
     let button = document.getElementById(id);
-    button.onclick = function() {
+    button.onclick = function () {
         quiz.guess(guess);
-         displayQuestion();
+        displayQuestion();
         pictureChange();
 
     }
@@ -78,16 +78,16 @@ function showProgress() {
     let currentQuestionNumber = quiz.questionIndex + 1;
     let ProgressElement = document.getElementById("progress");
     ProgressElement.innerHTML =
-    `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
+        `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
 };
 
 // Show the final result based on the answers
 function showScores() {
     //console.log(quiz.score)
-    if (quiz.score >= 4){
+    if (quiz.score >= 4) {
         //Dog person 
         let quizEndHTML =
-        `
+            `
         <h2 id='score'> You are a Dog person</h2>
 
         <center><img class="background" src="https://hips.hearstapps.com/vidthumb/images/gettyimages-155696335-1619709287.jpg?crop=1.00xw%3A0.376xh%3B0%2C0.225xh&resize=480%3A270">
@@ -98,15 +98,16 @@ function showScores() {
 
         <div class="quiz-repeat">
 
-        <a href="index.html">Take Quiz Again</a>
+        <a href="suggestor.html">Take Quiz Again</a>
         </div>
         `;
         let quizElement = document.getElementById("quiz");
-        quizElement.innerHTML = quizEndHTML;} 
-        // Cat person
-        else {
+        quizElement.innerHTML = quizEndHTML;
+    }
+    // Cat person
+    else {
         let quizEndHTML =
-        `
+            `
         <h2 id='score'> You are a Cat Person</h2>
         <center><img class="background" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*">
         <br>
@@ -114,7 +115,7 @@ function showScores() {
         <br>
         <br>
         <div class="quiz-repeat">
-        <a href="index.html">Take Quiz Again</a>
+        <a href="suggestor.html">Take Quiz Again</a>
         </div>
         `;
         let quizElement = document.getElementById("quiz");
@@ -125,7 +126,7 @@ function showScores() {
 
 var image = document.getElementById('myImage');
 
-function pictureChange(){
+function pictureChange() {
     let currentQuestionNumber = quiz.questionIndex + 1;
     console.log(currentQuestionNumber)
     // if(currentQuestionNumber == 1){
@@ -166,8 +167,8 @@ let questions = [
 
 
 //Changes the piture each question
-function pictureChange(){
-    document.querySelector('#myImage').setAttribute("src",`steps/step${quiz.questionIndex+1}.png`)
+function pictureChange() {
+    document.querySelector('#myImage').setAttribute("src", `steps/step${quiz.questionIndex + 1}.png`)
 
 }
 
@@ -186,4 +187,3 @@ displayQuestion();
 
 
 
-    
