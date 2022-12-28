@@ -123,6 +123,11 @@ a {
 .home-advice-top-view h2 a {
     text-decoration: none;
     color: var(--white);
+    transition: 0.5s;
+}
+
+.home-advice-top-view h2 a:hover {
+    font-size: 4rem;
 }
 
 .home-advice-bottom-view {
@@ -153,6 +158,17 @@ a {
     width: 30vw;
     height: auto;
     cursor: url("images/paw.png"), auto;
+    animation: showcards 2s;
+}
+
+@keyframes showcards {
+    0% {
+        width: 0vw;
+    }
+
+    100% {
+        width: 30vw;
+    }
 }
 
 /* HOME */
@@ -602,6 +618,10 @@ footer h2 {
         font-size: 2rem;
     }
 
+    .home-advice-top-view h2 a:hover {
+        font-size: 3rem;
+    }
+
     .home-advice-bottom-view h1 {
         font-size: 2.3rem;
     }
@@ -613,6 +633,16 @@ footer h2 {
     .home-advice-cards img {
         width: 30rem;
         margin-bottom: 3rem;
+    }
+
+    @keyframes showcards {
+        0% {
+            width: 0rem;
+        }
+
+        100% {
+            width: 30rem;
+        }
     }
 
     .home-advice-top-view h2 {
@@ -647,6 +677,16 @@ footer h2 {
         width: 20rem;
     }
 
+    @keyframes showcards {
+        0% {
+            width: 0rem;
+        }
+
+        100% {
+            width: 20rem;
+        }
+    }
+
     .text {
         font-size: 1rem;
     }
@@ -674,6 +714,16 @@ footer h2 {
 
     .home-advice-cards img {
         width: 15rem;
+    }
+
+    @keyframes showcards {
+        0% {
+            width: 0rem;
+        }
+
+        100% {
+            width: 15rem;
+        }
     }
 
     .text {

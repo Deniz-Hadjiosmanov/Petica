@@ -28,5 +28,4 @@ function rotateHamburger() {
         hamburgerLine3.style.transform = "translateY(0px) rotate(0deg)";
         hamburgerLine2.style.opacity = "100";
     }
-
 }
