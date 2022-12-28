@@ -98,7 +98,7 @@ function showScores() {
 
         <div class="quiz-repeat">
 
-        <a href="suggestor.html">Take Quiz Again</a>
+        <a href="dog_suggestor.html">Take Quiz Again</a>
         </div>
         `;
         let quizElement = document.getElementById("quiz");
@@ -115,7 +115,7 @@ function showScores() {
         <br>
         <br>
         <div class="quiz-repeat">
-        <a href="suggestor.html">Take Quiz Again</a>
+        <a href="dog_suggestor.html">Take Quiz Again</a>
         </div>
         `;
         let quizElement = document.getElementById("quiz");
