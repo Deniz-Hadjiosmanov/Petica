@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Petica</title>
+    <title>Pet Suggestor</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <a href="index.html" class="nav-branding"><img src="images/Logo-03.svg" id="logo"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home-pet-choice" class="nav-link">Suggestor</a>
+                    <a href="index.html#home-pet-choice" class="nav-link">Suggestor</a>
                 </li>
                 <li class="nav-item">
                     <a href="shops.html" class="nav-link">Pet Shops</a>
@@ -37,25 +37,29 @@
             </div>
         </nav>
     </header>
-    <section class="home-advice-top-view">
-        <img id="home-dog" src="images/home-background.svg">
-        <h2>
-            <a href="#home-pet-choice">Find</a><br> your pet<br> today
-        </h2>
-    </section>
 
-    <section class="home-advice-bottom-view" id="home-pet-choice">
-        <h1>Choose your new friend for your home</h1>
-        <div class="home-advice-cards">
-            <a href="dog_suggestor.html"><img src="images/dog.png"></a>
-            <a href="cat_suggestor.html"><img src="images/cat.png"></a>
-        </div>
-        <div class="home-advice-cards">
-            <a href=""><img src="images/fish.png"></a>
-            <a href=""><img src="images/bird.png"></a>
-        </div>
-        <div class="home-advice-cards">
-            <a href=""><img src="images/rodent.png"></a>
+    <section class="container">
+        <div class="quiz-box">
+            <div id="quiz">
+                <!-- <div >
+                    <img class="background" src="background.png" >
+                </div> -->
+                <div class="quiz-header">
+                    <p id="progress"></p>
+                </div>
+                <img id="myImage" src="step.png">
+                <div id="question">
+
+                </div>
+
+                <div class="buttons">
+                    <button class="btn" id="btn0">A. <span id="choice0">1 time per week</span></button>
+                    <button class="btn" id="btn1">B. <span id="choice1">2-3 times per week</span></button>
+                    <button class="btn" id="btn2">C. <span id="choice2">Every day</span></button>
+                    <button class="btn" id="btn3">D. <span id="choice3">I do not clean</span></button>
+                </div>
+                <hr>
+            </div>
         </div>
     </section>
 
@@ -66,7 +70,9 @@
         </div>
     </footer>
 
+    <script src="cat_script.js"></script>
     <script src="hamburger_script.js"></script>
+
 </body>
 
 </html>

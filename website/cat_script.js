@@ -85,10 +85,10 @@ function showProgress() {
 function showScores() {
     //console.log(quiz.score)
     if (quiz.score >= 4) {
-        //Dog person 
+        //Cat that doesn't shed a lot
         let quizEndHTML =
             `
-        <h2 id='score'> You are a Dog person</h2>
+        <h2 id='score'> You need a cat that doesn't shed a lot</h2>
 
         <center><img class="background" src="https://hips.hearstapps.com/vidthumb/images/gettyimages-155696335-1619709287.jpg?crop=1.00xw%3A0.376xh%3B0%2C0.225xh&resize=480%3A270">
         <br>
@@ -98,24 +98,24 @@ function showScores() {
 
         <div class="quiz-repeat">
 
-        <a href="dog_suggestor.html">Take Quiz Again</a>
+        <a href="cat_suggestor.html">Take Quiz Again</a>
         </div>
         `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
     }
-    // Cat person
+    // Cat that sheds frequently
     else {
         let quizEndHTML =
             `
-        <h2 id='score'> You are a Cat Person</h2>
+        <h2 id='score'> You are suitable for a cat that sheds frequently</h2>
         <center><img class="background" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*">
         <br>
         <br>
         <br>
         <br>
         <div class="quiz-repeat">
-        <a href="dog_suggestor.html">Take Quiz Again</a>
+        <a href="cat_suggestor.html">Take Quiz Again</a>
         </div>
         `;
         let quizElement = document.getElementById("quiz");
