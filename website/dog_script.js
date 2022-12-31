@@ -41,6 +41,27 @@ class Question {
     }
 }
 
+
+
+
+// create the back button and append it to the quiz element
+let backButton = document.createElement("button");
+backButton.innerHTML = "Back";
+backButton.style.backgroundColor = "rgb(43 41 41)";
+backButton.style.color = "#FFC800";
+backButton.style.borderColor = "#FFC800";
+backButton.style.borderWidth = "4px";
+backButton.style.height = "50px";
+backButton.style.width = "67px";
+backButton.style.borderRadius = "50%";
+backButton.onclick = function() {
+  quiz.questionIndex--;
+  displayQuestion();
+  pictureChange();
+}
+let quizElement = document.getElementById("quiz");
+quizElement.appendChild(backButton);
+
 // this function displays the questions in the container
 function displayQuestion() {
     if (quiz.isEnded()) {
@@ -57,10 +78,22 @@ function displayQuestion() {
             choiceElement.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
+    }
 
-        showProgress();
+    // hide or show the back button based on the current questionIndex
+    if (quiz.questionIndex === 0) {
+      backButton.style.display = "none";
+    } else {
+      backButton.style.display = "inline-block";
     }
 };
+
+
+
+
+
+
+
 
 // GUESS ANSWER
 function guess(id, guess) {
@@ -87,37 +120,70 @@ function showScores() {
     if (quiz.score >= 4) {
         //Dog person 
         let quizEndHTML =
-            `
-        <h2 id='score'> You are a Dog person</h2>
-
-        <center><img class="background" src="https://hips.hearstapps.com/vidthumb/images/gettyimages-155696335-1619709287.jpg?crop=1.00xw%3A0.376xh%3B0%2C0.225xh&resize=480%3A270">
-        <br>
-        <br>
-         <br>
-        <br>
-
-        <div class="quiz-repeat">
-
-        <a href="dog_suggestor.html">Take Quiz Again</a>
+        `
+        <h2 class='score'> YOUR IDEAL DOG:</h2>
+        <div class="wrapper">
+        <div class="main_fish">
+       <center>
+        <img class="fish_img" src="https://images.pexels.com/photos/686094/pexels-photo-686094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        
+        <h3 class='score'> Golden Retrever</h3>
+        <p class='score'>The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat. They are great family pets and may shed but theyre loving nature more than covers for this.</p>
+        </center>
         </div>
-        `;
+       
+        <div class="other-consider">
+        <h3 class='score'> ALSO CONSIDER</h3>
+        <img class="fish_img2" src="https://images.pexels.com/photos/998251/pexels-photo-998251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h4 class='score'> Labrador</h4>
+        <img class="fish_img2" src="https://images.pexels.com/photos/342214/pexels-photo-342214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h4 class='score'> German Shepard</h4>
+        </div>
+
+       
+        </div>
+       
+        <br>
+        <br>
+        <div class="quiz-repeat">
+        <a href="shops.html">Find my pet</a>
+        </div>
+    `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
     }
     // Cat person
     else {
         let quizEndHTML =
-            `
-        <h2 id='score'> You are a Cat Person</h2>
-        <center><img class="background" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*">
-        <br>
-        <br>
+        `
+        <h2 class='score'> YOUR IDEAL DOG:</h2>
+        <div class="wrapper">
+        <div class="main_fish">
+       <center>
+        <img class="fish_img" src="https://puppytoob.com/wp-content/uploads/2015/08/cavalier1.jpg">
+        
+        <h3 class='score'>Cavalier King Charles Spaniel</h3>
+        <p class='score'>They’re small and they do not love too much to walk all the time. What they do love, however, is to spend their time doing what they love the most, which is sitting with you and relaxing. Some time playing in the yard and some short walks will be perfect for this particular breed.</p>
+        </center>
+        </div>
+       
+        <div class="other-consider">
+        <h3 class='score'> ALSO CONSIDER</h3>
+        <img class="fish_img2" src="https://puppytoob.com/wp-content/uploads/2015/08/english-bulldog.jpg">
+        <h4 class='score'> English Bulldog</h4>
+        <img class="fish_img2" src="https://puppytoob.com/wp-content/uploads/2015/08/bassett-hound.jpg">
+        <h4 class='score'>Bassett Hound</h4>
+        </div>
+
+       
+        </div>
+       
         <br>
         <br>
         <div class="quiz-repeat">
-        <a href="dog_suggestor.html">Take Quiz Again</a>
+        <a href="shops.html">Find my pet</a>
         </div>
-        `;
+    `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
 
@@ -148,19 +214,19 @@ function pictureChange() {
 // create questions here
 let questions = [
     new Question(
-        "", ["1 time per week", "2-3 times per week", "Every day", "I do not clean"], "2-3 times per week"
+        "", ["Apartment", "Studio", "Student House", "Family Home"], "Family Home"
     ),
     new Question(
-        "", ["Once a week", "Once a month", "Every day", "3-4 times per week"], "Every day"
+        "", ["Every day", "3-4 times a week", "1-2 times a week", "I do not want to walk"], "Every day"
     ),
     new Question(
-        "", ["I have plenty of space in my home, plus a backyard.", "Cozy, with an abundance of sunny windowsills.", "Pretty fly, with plenty of perches.", "It is perfect for me, but I am not so sure I want a pet roaming around…"], "I have plenty of space in my home, plus a backyard."
+        "", ["Yes, but its small", "Yes, a large piece of land", "No, but I live near a park", "No"], "Yes, a large piece of land"
     ),
     new Question(
-        "", ["Healthy. I can afford both routine and unexpected costs, if necessary.", "Basic. I can afford start-up supplies and inexpensive recurring costs.", "Pretty good, but I would like to avoid any major expenses.", "After the initial costs for a habitat and supplies, I would like to spend very little."], "Healthy. I can afford both routine and unexpected costs, if necessary."
+        "", ["Yes", "No", "Yes, but they are not that bad", "No, but somone in my house does"], "No"
     ),
     new Question(
-        "", ["As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet.", "I would prefer a pet that does not require any training. ", "I am not against training, but I was not planning on it.", "A little bit. Tricks sound especially fun!"], "As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet."
+        "", ["No", "Yes", "No, but one is on the way", "No, but family likes to vist"], "No"
     )
 ];
 

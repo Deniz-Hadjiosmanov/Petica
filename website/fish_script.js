@@ -42,6 +42,24 @@ class Question {
     }
 }
 
+// create the back button and append it to the quiz element
+let backButton = document.createElement("button");
+backButton.innerHTML = "Back";
+backButton.style.backgroundColor = "rgb(43 41 41)";
+backButton.style.color = "#FFC800";
+backButton.style.borderColor = "#FFC800";
+backButton.style.borderWidth = "4px";
+backButton.style.height = "50px";
+backButton.style.width = "67px";
+backButton.style.borderRadius = "50%";
+backButton.onclick = function() {
+  quiz.questionIndex--;
+  displayQuestion();
+  pictureChange();
+}
+let quizElement = document.getElementById("quiz");
+quizElement.appendChild(backButton);
+
 // this function displays the questions in the container
 function displayQuestion() {
     if (quiz.isEnded()) {
@@ -58,8 +76,13 @@ function displayQuestion() {
             choiceElement.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
+    }
 
-        showProgress();
+    // hide or show the back button based on the current questionIndex
+    if (quiz.questionIndex === 0) {
+      backButton.style.display = "none";
+    } else {
+      backButton.style.display = "inline-block";
     }
 };
 
