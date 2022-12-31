@@ -86,26 +86,26 @@ function showProgress() {
 function showScores() {
     //console.log(quiz.score)
     if (quiz.score >= 4) {
-        //Fish 1 
+        // Cat that sheds
         let quizEndHTML =
             `
-            <h2 id='score'> YOUR IDEAL FISH:</h2>
+            <h2 class='score'> YOUR IDEAL CAT:</h2>
             <div class="wrapper">
             <div class="main_fish">
            <center>
-            <img class="fish_img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/1433873-center-1">
+            <img class="fish_img" src="images/cat/persian_cat.png">
             
-            <h3 id='score'> GOLDEN WHITE CLOUD</h3>
-            <p id='score'>Golden White Clouds are active, gold-colored fish that like to swim around the tank near the surface. They require a 10-gallon tank and are hardy, so they’re great for beginner aquarists. They like to swim with a school of fish, so consider getting some friends! </p>
+            <h3 class='score'> PERSIAN CAT</h3>
+            <p class='score'>These cats have long, thick coats that require frequent grooming to maintain. They are known to shed frequqntly and may require daily grooming to control shedding. We believe that you will be able to pay enough attention to your new friend at home :) </p>
             </center>
             </div>
            
             <div class="other-consider">
-            <h3 id='score'> ALSO CONSIDER</h3>
-            <img class="fish_img2" src="images/fish/gold.png">
-            <h4 id='score'> Gold fish</h4>
-            <img class="fish_img2" src="images/fish/betta.png">
-            <h4 id='score'> Beta</h4>
+            <h3 class='score'> ALSO CONSIDER</h3>
+            <img class="fish_img2" src="images/cat/siberian_cat.png">
+            <h4 class='score'> Siberian Cat</h4>
+            <img class="fish_img2" src="images/cat/maine_coon_cat.png">
+            <h4 class='score'> Maine Coon Cat</h4>
             </div>
     
            
@@ -120,25 +120,25 @@ function showScores() {
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
     }
-    // Fish 2
+    // Cat that doesn't shed
     else {
         let quizEndHTML =
             `
-        <h2 id='score'> YOUR IDEAL FISH:</h2>
+        <h2 id='score'> YOUR IDEAL CAT:</h2>
         <div class="wrapper">
         <div class="main_fish">
         <center>
-        <img class="fish_img" src="https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/3468522-center-1">
-        <h3 id='score'> YELLOWTAIL DAMSELFISH</h3>
-        <p id='score'>The Yellowtail Damselfish is no damsel in distress, but it does prefer to have a few hiding places and peaceful tankmates. It’s hardy, easy to care for, and beautiful, making it a great option for both beginner and advanced aquarists alike. </p>
+        <img class="fish_img" src="images/cat/devon_rex_cat.png">
+        <h3 id='score'> DEVON REX CAT</h3>
+        <p id='score'>These cats have short, thin coats that require minimal grooming. They are known to shed very little and may only require occasional grooming </p>
         </center>
         </div>
         <div class="other-consider">
         <h3 id='score'> ALSO CONSIDER</h3>
-        <img class="fish_img2" src="http://cdn.shopify.com/s/files/1/0443/5007/9132/products/Electricblueramcichlid_thumbnail_1200x1200.jpg?v=1615573573">
-        <h4 id='score'> Electric Blue Cichlid</h4>
-        <img class="fish_img2" src="https://thumbs.dreamstime.com/b/purple-firefish-15832463.jpg">
-        <h4 id='score'> Purple Firefish</h4>
+        <img class="fish_img2" src="images/cat/cornish_rex_cat.png">
+        <h4 id='score'> Cornish Rex Cat</h4>
+        <img class="fish_img2" src="images/cat/sphynx_cat.png">
+        <h4 id='score'> Sphynx Cat</h4>
         </div>
 
        

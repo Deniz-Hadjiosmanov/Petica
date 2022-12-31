@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-#progress{
-  display: none;
+
+#progress {
+    display: none;
 }
 
 html {
@@ -265,58 +266,69 @@ a {
     background-color: rgb(43, 226, 89);
 }
 
-#score h2 {
+.score h2 {
     color: black;
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 4rem;
 }
-#score h3 {
+
+.score h3 {
     color: black;
     text-align: center;
     font-size: 2.0rem;
-    
+
 }
-#score p {
+
+.score p {
     color: black;
     text-align: center;
     font-size: 1.8rem;
-    
+
 }
-.column1{
+
+.column1 {
     width: 50%;
 }
-.column2{
+
+.column2 {
     width: 50%;
     float: right;
 }
-.fish_img{
+
+.fish_img {
     width: 200px;
     height: 200px;
     border: solid 5px;
     border-radius: 50%;
     border-color: #FFC800;
 }
-.fish_img2{
+
+.fish_img2 {
     width: 150px;
     border: solid 4px;
     border-radius: 50%;
     border-color: #FFC800;
 }
-.main_fish{
+
+.main_fish {
     width: 60%;
-    float:left; /* add this */
-    
+    float: left;
+    /* add this */
+
 }
-.other-consider{
- 
-    float: right; /* add this */
+
+.other-consider {
+
+    float: right;
+    /* add this */
 }
 
 .wrapper {
     width: 100%;
-  
-    overflow: hidden; /* add this to contain floated children */
+
+    overflow: hidden;
+    /* add this to contain floated children */
 }
 
 .quiz-repeat {

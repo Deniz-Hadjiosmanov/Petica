@@ -89,7 +89,7 @@ function showScores() {
         //Fish 1 
         let quizEndHTML =
             `
-            <h2 id='score'> YOUR IDEAL FISH:</h2>
+            <h2 class='score'> YOUR IDEAL FISH:</h2>
             <div class="wrapper">
             <div class="main_fish">
            <center>
@@ -163,7 +163,7 @@ var image = document.getElementById('myImage');
 
 let questions = [
     new Question(
-        "", ["Small", "Large","Not Sure"], "Small"
+        "", ["Small", "Large", "Not Sure"], "Small"
     ),
     new Question(
         "", ["Cool", "Warm", "Not Sure"], "Warm"
