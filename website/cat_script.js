@@ -1,4 +1,5 @@
 
+
 // create a Quiz class
 class Quiz {
     constructor(questions) {
@@ -85,38 +86,68 @@ function showProgress() {
 function showScores() {
     //console.log(quiz.score)
     if (quiz.score >= 4) {
-        //Cat that doesn't shed a lot
+        //Fish 1 
         let quizEndHTML =
             `
-        <h2 id='score'> You need a cat that doesn't shed a lot</h2>
-
-        <center><img class="background" src="https://hips.hearstapps.com/vidthumb/images/gettyimages-155696335-1619709287.jpg?crop=1.00xw%3A0.376xh%3B0%2C0.225xh&resize=480%3A270">
-        <br>
-        <br>
-         <br>
-        <br>
-
-        <div class="quiz-repeat">
-
-        <a href="cat_suggestor.html">Take Quiz Again</a>
-        </div>
+            <h2 id='score'> YOUR IDEAL FISH:</h2>
+            <div class="wrapper">
+            <div class="main_fish">
+           <center>
+            <img class="fish_img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/1433873-center-1">
+            
+            <h3 id='score'> GOLDEN WHITE CLOUD</h3>
+            <p id='score'>Golden White Clouds are active, gold-colored fish that like to swim around the tank near the surface. They require a 10-gallon tank and are hardy, so they’re great for beginner aquarists. They like to swim with a school of fish, so consider getting some friends! </p>
+            </center>
+            </div>
+           
+            <div class="other-consider">
+            <h3 id='score'> ALSO CONSIDER</h3>
+            <img class="fish_img2" src="images/fish/gold.png">
+            <h4 id='score'> Gold fish</h4>
+            <img class="fish_img2" src="images/fish/betta.png">
+            <h4 id='score'> Beta</h4>
+            </div>
+    
+           
+            </div>
+           
+            <br>
+            <br>
+            <div class="quiz-repeat">
+            <a href="shops.html">Find my pet</a>
+            </div>
         `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
     }
-    // Cat that sheds frequently
+    // Fish 2
     else {
         let quizEndHTML =
             `
-        <h2 id='score'> You are suitable for a cat that sheds frequently</h2>
-        <center><img class="background" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="quiz-repeat">
-        <a href="cat_suggestor.html">Take Quiz Again</a>
+        <h2 id='score'> YOUR IDEAL FISH:</h2>
+        <div class="wrapper">
+        <div class="main_fish">
+        <center>
+        <img class="fish_img" src="https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/3468522-center-1">
+        <h3 id='score'> YELLOWTAIL DAMSELFISH</h3>
+        <p id='score'>The Yellowtail Damselfish is no damsel in distress, but it does prefer to have a few hiding places and peaceful tankmates. It’s hardy, easy to care for, and beautiful, making it a great option for both beginner and advanced aquarists alike. </p>
+        </center>
         </div>
+        <div class="other-consider">
+        <h3 id='score'> ALSO CONSIDER</h3>
+        <img class="fish_img2" src="http://cdn.shopify.com/s/files/1/0443/5007/9132/products/Electricblueramcichlid_thumbnail_1200x1200.jpg?v=1615573573">
+        <h4 id='score'> Electric Blue Cichlid</h4>
+        <img class="fish_img2" src="https://thumbs.dreamstime.com/b/purple-firefish-15832463.jpg">
+        <h4 id='score'> Purple Firefish</h4>
+        </div>
+
+       
+        </div>
+       
+        <div class="quiz-repeat">
+        <a href="shops.html">Find my pet</a>
+        </div>
+        
         `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
@@ -126,49 +157,31 @@ function showScores() {
 
 var image = document.getElementById('myImage');
 
-function pictureChange() {
-    let currentQuestionNumber = quiz.questionIndex + 1;
-    console.log(currentQuestionNumber)
-    // if(currentQuestionNumber == 1){
-    //     image.src = "step.png";
-    // }
-    // else if(currentQuestionNumber == 2)
-    // {    image.src = "step1.png";}
-    // else if(currentQuestionNumber == 3)
-    // {    image.src = "step2.png";}
-    // else if(currentQuestionNumber == 4)
-    // {    image.src = "step3.png";}
-    // else if(currentQuestionNumber == 5)
-    // {    image.src = "step4.png";}
-    // else{
-    //     image.src = "step.png";
-    // }
-}
 
 // create questions here
+
+
 let questions = [
     new Question(
-        "", ["1 time per week", "2-3 times per week", "Every day", "I do not clean"], "2-3 times per week"
+        "", ["Almost all day", "Half day", "During the evening"], "Almost all day"
     ),
     new Question(
-        "", ["Once a week", "Once a month", "Every day", "3-4 times per week"], "Every day"
+        "", ["Yes", "No", "Not Sure"], "No"
     ),
     new Question(
-        "", ["I have plenty of space in my home, plus a backyard.", "Cozy, with an abundance of sunny windowsills.", "Pretty fly, with plenty of perches.", "It is perfect for me, but I am not so sure I want a pet roaming around…"], "I have plenty of space in my home, plus a backyard."
+        "", ["Twice a week", "Once a week", "Once every 2 weeks"], "Twice a week"
     ),
     new Question(
-        "", ["Healthy. I can afford both routine and unexpected costs, if necessary.", "Basic. I can afford start-up supplies and inexpensive recurring costs.", "Pretty good, but I would like to avoid any major expenses.", "After the initial costs for a habitat and supplies, I would like to spend very little."], "Healthy. I can afford both routine and unexpected costs, if necessary."
+        "", ["Active", "Laid-back", "I don't have preferences"], "Active"
     ),
     new Question(
-        "", ["As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet.", "I would prefer a pet that does not require any training. ", "I am not against training, but I was not planning on it.", "A little bit. Tricks sound especially fun!"], "As much as it takes. I plan to work with a trainer and am looking forward to learning along with my pet."
+        "", ["Yes", "No", "There will be soon"], "No"
     )
 ];
 
-
-
 //Changes the piture each question
 function pictureChange() {
-    document.querySelector('#myImage').setAttribute("src", `steps/step${quiz.questionIndex + 1}.png`)
+    document.querySelector('#myImage').setAttribute("src", `images/cat/step${quiz.questionIndex + 1}.png`)
 
 }
 
@@ -184,3 +197,6 @@ let quiz = new Quiz(questions);
 pictureChange();
 
 displayQuestion();
+
+
+
