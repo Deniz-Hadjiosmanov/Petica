@@ -13,6 +13,9 @@ html {
 
 body {
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 :root {
@@ -319,21 +322,27 @@ a {
 }
 
 .other-consider {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     float: right;
     /* add this */
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-
     overflow: hidden;
     /* add this to contain floated children */
 }
 
 .quiz-repeat {
     text-align: center;
-    margin: 0 auto;
+    margin: 3rem;
 }
 
 .quiz-repeat a {
@@ -715,6 +724,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: auto;
 }
 
 #footer-icons-container {
@@ -846,6 +856,10 @@ footer h2 {
         border-radius: 2.2rem;
     }
 
+    .quiz-box {
+        padding: 3rem 5rem 0 5rem;
+    }
+
     #myImage {
         width: 30rem;
     }
@@ -853,7 +867,7 @@ footer h2 {
 
 @media all and (max-width: 700px) {
     .quiz-box {
-        padding: 0;
+        padding: 3rem 0 0 0;
     }
 
     .quiz-header #progress {
@@ -895,6 +909,14 @@ footer h2 {
 
     .btn {
         font-size: 1.4rem;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .main_fish {
+        margin-bottom: 3rem;
     }
 }
 
