@@ -904,6 +904,21 @@ footer h2 {
     .main_fish {
         margin-bottom: 3rem;
     }
+
+     /*contact responsiveness*/
+
+     #dogContainer {
+        /*Background container for the dog image*/
+        height: 58vh;
+        width: 23vw;
+    }
+
+    #dogContainer img {
+        /*dog picture*/
+        height: 20%;
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -974,6 +989,13 @@ footer h2 {
 
     .btn {
         font-size: 1.2rem;
+    }
+    
+      /*contact responsive*/
+      #dogContainer img {
+        /*dog picture*/
+        height: 20%;
+        width: 80%;
     }
 }
 
