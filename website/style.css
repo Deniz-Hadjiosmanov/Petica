@@ -599,15 +599,12 @@ form{
 
 }
 
-.contactForm {
-    /*Created a parent class to hold name,email,textarea and sumbit in contact form*/
+.form-row{ /* form row for text and email input*/
     display: flex;
-    flex-flow: row wrap;
-    height: 57vh;
-    width: 23vw;
+    flex-wrap: wrap;
 }
 
-input[type=text],
+form input[type=text],
 select {
     /*text input area*/
     position: relative;
@@ -622,7 +619,7 @@ select {
     width: 14vh;
 }
 
-input[type=email],
+form input[type=email],
 select {
     /*email input area*/
     position: relative;
@@ -637,7 +634,7 @@ select {
     width: 15vh;
 }
 
-.textArea {
+form textArea {
     /*textarea input area*/
     position: relative;
     display: flex;
@@ -656,12 +653,12 @@ select {
     padding: 2px 2px;
 }
 
-.textArea:hover {
+form textArea:hover {
     /*changes textarea background color*/
     background-color: #373737e6;
 }
 
-input[type=submit] {
+form input[type=submit] {
     /*submit button*/
     position: relative;
     top: 28vh;
@@ -677,7 +674,7 @@ input[type=submit] {
     font-size: 16px;
 }
 
-input[type=submit]:hover {
+form input[type=submit]:hover {
     /*changes submit background color*/
     background-color: rgb(144, 234, 246);
 }
