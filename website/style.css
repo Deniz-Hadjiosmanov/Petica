@@ -672,7 +672,7 @@ form input[type=submit]:hover {
     /*Background container for the dog image*/
     position: relative;
     height: 57vh;
-    width: 23vw;
+    width: 17vw;
     background-color: var(--yellow);
     display: flex;
     flex-direction: column;
