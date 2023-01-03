@@ -674,8 +674,6 @@ form input[type=submit]:hover {
 #dogContainer {
     /*Background container for the dog image*/
     position: relative;
-    /* top: 0vh;
-    left: 20vh; */
     height: 57vh;
     width: 23vw;
     background-color: var(--yellow);
