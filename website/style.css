@@ -607,47 +607,36 @@ form{
 form input[type=text],
 select {
     /*text input area*/
-    position: relative;
-    top: 25vh;
-    left: 4vh;
-    margin-top: -17px;
+    flex:1;
+    flex-direction: row;
     background: #313131ea;
     border-radius: 11px 11px 11px;
-    margin-bottom: 11px;
     padding: 11px;
     color: white;
-    width: 14vh;
+    width: 34%;
+    margin-right: 40px;
+    margin-bottom: 15px;
 }
 
 form input[type=email],
 select {
     /*email input area*/
-    position: relative;
-    top: 25vh;
-    left: 5vh;
-    margin-top: -17px;
     background: #313131ea;
     border-radius: 11px 11px 11px;
-    margin-bottom: 11px;
     padding: 11px;
     color: white;
-    width: 15vh;
+    width: 34%;
+    margin-bottom: 15px;
 }
 
 form textArea {
     /*textarea input area*/
-    position: relative;
-    display: flex;
-    top: 25vh;
-    left: 4vh;
-    padding: 5px 5px;
-    width: 275px;
-    height: 93px;
+    min-width: 36vh;
+    height: 15vh;
     border: 1px solid #707070;
     border-radius: 11px 11px 11px;
     background-color: #313131ea;
     color: white;
-    line-height: 1.4;
     resize: none;
     font-size: 14px;
     padding: 2px 2px;
@@ -660,18 +649,15 @@ form textArea:hover {
 
 form input[type=submit] {
     /*submit button*/
-    position: relative;
-    top: 28vh;
-    left: 4vh;
     padding: 7px 126px;
     border: 1px solid rgb(0, 0, 0);
     background-color: #FFC800;
     border-radius: 13px 13px 13px;
-    margin: auto;
+    margin-top: 20px;
     text-decoration: none;
     cursor: pointer;
     color: black;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 form input[type=submit]:hover {
