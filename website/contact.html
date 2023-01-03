@@ -40,35 +40,31 @@
         </header>
         <section class="contactContainer">
             <!-- different classes for the icons and different headings -->
-            <div class="formHeading">
-                <h1>Get in Touch</h1>
-            </div>
-            <div class="formAddress">
-                <h2>Rachelsmolen 1, 5612 MA Eindhoven</h2><img src="images/location.png">
-            </div>
-            <div class="formNumber1">
-                <h2>+31 101010123</h2><img src="images/phone.png">
-            </div>
-            <div class="formNumber2">
-                <h2>+31 232103212</h2><img src="images/mobilePhone.png">
-            </div>
+            
             <!-- body for the name, email, and textarea -->
-            <div class="contactForm" id="contactForm">
                 <form>
-                    <input type="text" id="username" name="username" placeholder="Name" required="">
-
-                    <input type="email" id="email" name="email" placeholder="Email Address" required
-                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
-
-                    <textarea class="textArea" id="textarea" placeholder="Enter your message here..."
-                        required=""></textarea>
-                    <input type="submit" value="submit" onclick="submitMessage()">
+                        <h3>Get in touch</h3>
+                        <div class="formAddress">
+                            <h2>Rachelsmolen 1, 5612 MA Eindhoven</h2><img src="images/location.png">
+                        </div>
+                        <div class="formNumber1">
+                            <h2>+31 101010123</h2><img src="images/phone.png">
+                        </div>
+                        <div class="formNumber2">
+                            <h2>+31 232103212</h2><img src="images/mobilePhone.png">
+                        </div>
+                        <div class="form-row">
+                        <input type="text" id="username" name="username" placeholder="Name" required="">
+                                
+                        <input type="email" id="email" name="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
+                        </div>
+                        <textarea class="textArea" id="textarea" placeholder="Enter your message here..." required=""></textarea>
+    
+                        <input type="submit" value="Send" onclick="submitMessage()">
                 </form>
-
-            </div>
-            <div id="dogContainer"> <!--yellow background for the dog picture-->
+             <div id="dogContainer"> <!--yellow background for the dog picture-->
                 <img src="images/Tdog.png"></a> <!--dog png picture -->
-            </div>
+             </div> 
         </section>
     </section>
 
