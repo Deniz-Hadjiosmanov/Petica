@@ -512,7 +512,7 @@ iframe {
     /*Contact page background*/
     width: 100vw;
     height: 87vh;
-    background: black;
+    background: rgb(255, 255, 255);
 }
 
 .contactContainer {
@@ -530,15 +530,16 @@ iframe {
     border-radius: 11px 11px 11px;
 }
 
-.formHeading h1 {
-    /*Main heading for the contacts form*/
-    position: absolute;
-    top: 0vh;
-    left: 1vh;
-    font-size: 1.6em;
-    color: rgb(255, 255, 255);
-}
-
+form{
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 10px;
+ }
+ 
 .formAddress h2 {
     /*Address text*/
     position: absolute;
