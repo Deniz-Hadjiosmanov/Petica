@@ -539,59 +539,63 @@ form{
     max-width: 300px;
     border-radius: 10px;
  }
- 
+
+ form h3{
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
 .formAddress h2 {
     /*Address text*/
-    position: absolute;
-    top: 12vh;
-    left: 8.5vh;
+    margin-left: 25px;
     font-size: 0.9em;
     color: rgb(255, 255, 255);
 }
 
 .formAddress img {
     /*address icon*/
-    position: absolute;
-    height: 4%;
-    width: 2%;
-    top: 12vh;
-    left: 5.5vh;
+    position: relative;
+    top: -20px;
+    left: -2px;
+    margin-right: 50px;
+    height: 3vh;
+    width: 7%;
 }
 
 .formNumber1 h2 {
     /*homeNumber text*/
-    position: absolute;
-    top: 16vh;
-    left: 8.5vh;
+    margin-left: 25px;
     font-size: 0.9em;
     color: rgb(255, 255, 255);
 }
 
 .formNumber1 img {
     /*homeNumber icon*/
-    position: absolute;
-    height: 4%;
-    width: 2%;
-    top: 16vh;
-    left: 5.5vh;
+    position: relative;
+    top: -20px;
+    left: -2px;
+    margin-right: 50px;
+    height: 3vh;
+    width: 7%;
 }
 
 .formNumber2 h2 {
     /*phoneNumber text*/
-    position: absolute;
-    top: 20vh;
-    left: 8.5vh;
+    margin-left: 25px;
     font-size: 0.9em;
     color: rgb(255, 255, 255);
 }
 
 .formNumber2 img {
     /*phoneNumber icon*/
-    position: absolute;
-    height: 4%;
-    width: 2%;
-    top: 20vh;
-    left: 5.4vh;
+    position: relative;
+    top: -20px;
+    left: -2px;
+    margin-right: 50px;
+    height: 3vh;
+    width: 7%;
 
 }
 
