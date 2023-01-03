@@ -517,12 +517,9 @@ iframe {
 
 .contactContainer {
     /*Form background container*/
-    box-sizing: border-box;
-    position: absolute;
-    top: 22%;
-    left: 30%;
-    width: 45vw;
+    margin: 45px auto;
     height: 60vh;
+    max-width: 94vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -990,7 +987,7 @@ footer h2 {
     .btn {
         font-size: 1.2rem;
     }
-    
+
       /*contact responsive*/
       #dogContainer img {
         /*dog picture*/
