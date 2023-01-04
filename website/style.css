@@ -305,6 +305,7 @@ a {
     border: solid 5px;
     border-radius: 50%;
     border-color: #FFC800;
+    object-fit: cover;
 }
 
 .fish_img2 {
@@ -312,6 +313,7 @@ a {
     border: solid 4px;
     border-radius: 50%;
     border-color: #FFC800;
+    object-fit: cover;
 }
 
 .main_fish {
