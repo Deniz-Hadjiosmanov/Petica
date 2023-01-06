@@ -52,10 +52,10 @@ backButton.style.borderWidth = "4px";
 backButton.style.height = "50px";
 backButton.style.width = "67px";
 backButton.style.borderRadius = "50%";
-backButton.onclick = function() {
-  quiz.questionIndex--;
-  displayQuestion();
-  pictureChange();
+backButton.onclick = function () {
+    quiz.questionIndex--;
+    displayQuestion();
+    pictureChange();
 }
 let quizElement = document.getElementById("quiz");
 quizElement.appendChild(backButton);
@@ -80,9 +80,9 @@ function displayQuestion() {
 
     // hide or show the back button based on the current questionIndex
     if (quiz.questionIndex === 0) {
-      backButton.style.display = "none";
+        backButton.style.display = "none";
     } else {
-      backButton.style.display = "inline-block";
+        backButton.style.display = "inline-block";
     }
 };
 
@@ -110,7 +110,7 @@ function showScores() {
     if (quiz.score >= 4) {
         // reptile that sheds
         let quizEndHTML =
-        `
+            `
         <h2 id='score'> YOUR IDEAL reptile:</h2>
             <div class="wrapper">
                 <div class="main_fish">
@@ -125,7 +125,7 @@ function showScores() {
                         <h3 id='score'> ALSO CONSIDER</h3>
                         <img class="fish_img2" src="images/reptile/Bearded_Dragon.jpg">
                         <h4 id='score'>Bearded Dragon</h4>
-                        <img class="fish_img2" src="images/reptile/tortoise.jpg">
+                        <img class="fish_img2" src="images/reptile/tortouse.jpg">
                         <h4 id='score'>Tortoise</h4>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ function showScores() {
                         <h3 id='score'> ALSO CONSIDER</h3>
                         <img class="fish_img2" src="images/reptile/Bearded_Dragon.jpg">
                         <h4 id='score'>Bearded Dragon</h4>
-                        <img class="fish_img2" src="images/reptile/tortoise.jpg">
+                        <img class="fish_img2" src="images/reptile/tortouse.jpg">
                         <h4 id='score'>Tortoise</h4>
                     </div>
                 </div>
