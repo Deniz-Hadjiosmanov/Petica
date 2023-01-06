@@ -150,7 +150,7 @@ function showScores() {
         <div class="wrapper">
         <div class="main_fish">
        <center>
-        <img class="fish_img" src="images/bird/parkeet1.png">
+        <img class="fish_img3" src="images/bird/parkeet1.png">
         
         <h3 class='score'> Parakeet</h3>
          Parakeets are one of the top birds worldwide as a pet, they are tiny parrot versions with long tail feathers.
