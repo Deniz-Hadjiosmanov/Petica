@@ -188,25 +188,25 @@ var image = document.getElementById('myImage');
 
 let questions = [
     new Question(
-        "", ["Almost all day", "Half day", "During the evening"], "Almost all day"
+        "", ["Apartment", "Studio", "Student House", "Family Home"], "Family Home"
     ),
     new Question(
-        "", ["Yes", "No", "Not Sure"], "No"
+        "", ["Yes", "No", "Not Sure","No but someone in my family has"], "No"
     ),
     new Question(
-        "", ["Twice a week", "Once a week", "Once every 2 weeks"], "Twice a week"
+        "", ["5 to 10 years", "15 to 20 years","20 years", "40 years"], "40 years"
     ),
     new Question(
-        "", ["Active", "Laid-back", "I don't have preferences"], "Active"
+        "", ["Usually all day", "Often", "Not home very often","Mostly in the evenings and afternoons"], "Often"
     ),
     new Question(
-        "", ["Yes", "No", "There will be soon"], "No"
+        "", ["Big", "Small","Average", "No preference"], "Big"
     )
 ];
 
 //Changes the piture each question
 function pictureChange() {
-    document.querySelector('#myImage').setAttribute("src", `images/cat/step${quiz.questionIndex + 1}.png`)
+    document.querySelector('#myImage').setAttribute("src", `images/bird/step${quiz.questionIndex + 1}.png`)
 
 }
 
