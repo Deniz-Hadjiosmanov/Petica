@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Petica</title>
+    <title>Pet Suggestor</title>
 </head>
 
 <body>
@@ -38,11 +38,39 @@
         </nav>
     </header>
 
-    <h1>Find a pet store near you</h1>
-    <div class="erik-container">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tcFQDyk1oElDnAg9tFGtXS9Vri3-PFU&ehbc=2E312F"></iframe>
+    <div class="container">
+
+
+
+        <div class="quiz-box">
+
+            <div id="quiz">
+
+
+
+
+
+                <div class="quiz-header">
+                    <p id="progress"></p>
+
+                </div>
+                <img id="myImage" src="images/bird/step1.png">
+                <div id="question">
+
+                </div>
+
+                <div class="buttons">
+                    <button class="btn" id="btn0">A. <span id="choice0">Apartment</span></button>
+                    <button class="btn" id="btn1">B. <span id="choice1">Studio</span></button>
+                    <button class="btn" id="btn2">C. <span id="choice2">Student House</span></button>
+                    <button class="btn" id="btn3">D. <span id="choice3">Family Home</span></button>
+                </div>
+
+                <hr>
+
+            </div>
+        </div>
     </div>
-    <br>
     <footer>
         <h2>Find us here</h2>
         <div id="footer-icons-container">
@@ -50,7 +78,9 @@
         </div>
     </footer>
 
+    <script src="bird_script.js"></script>
     <script src="hamburger_script.js"></script>
+
 </body>
 
 </html>

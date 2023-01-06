@@ -52,10 +52,10 @@ backButton.style.borderWidth = "4px";
 backButton.style.height = "50px";
 backButton.style.width = "67px";
 backButton.style.borderRadius = "50%";
-backButton.onclick = function () {
-    quiz.questionIndex--;
-    displayQuestion();
-    pictureChange();
+backButton.onclick = function() {
+  quiz.questionIndex--;
+  displayQuestion();
+  pictureChange();
 }
 let quizElement = document.getElementById("quiz");
 quizElement.appendChild(backButton);
@@ -80,9 +80,9 @@ function displayQuestion() {
 
     // hide or show the back button based on the current questionIndex
     if (quiz.questionIndex === 0) {
-        backButton.style.display = "none";
+      backButton.style.display = "none";
     } else {
-        backButton.style.display = "inline-block";
+      backButton.style.display = "inline-block";
     }
 };
 
@@ -93,6 +93,7 @@ function guess(id, guess) {
         quiz.guess(guess);
         displayQuestion();
         pictureChange();
+
     }
 };
 
@@ -107,63 +108,76 @@ function showProgress() {
 // Show the final result based on the answers
 function showScores() {
     //console.log(quiz.score)
-    if (quiz.score >= 6) {
-        // reptile that sheds
+    if (quiz.score >= 4) {
+        // Big birds
         let quizEndHTML =
-            `
-        <h2 id='score'> YOUR IDEAL reptile:</h2>
-            <div class="wrapper">
-                <div class="main_fish">
-                    <center>
-                        <img class="fish_img" src="images/reptile/pet_snake.png">
-                        <h3 id='score'>Ball Python</h3
-                        <p id='score'>Arguably the most popular pet snake there is, the ball python is a very even-tempered, docile snake. 
-                        They only grow to be about 3-5 feet in length but can live as long as 35 years in captivity.</p>
-                    </center>
-                </div>
-                    <div class="other-consider">
-                        <h3 id='score'> ALSO CONSIDER</h3>
-                        <img class="fish_img2" src="images/reptile/corn_snake.png">
-                        <h4 id='score'>Corn Snake</h4>
-                        <img class="fish_img2" src="images/reptile/leopard_gecko.jpg">
-                        <h4 id='score'>Leapard Gecko</h4>
-                    </div>
-                </div>
-        <div class="quiz-repeat">
-            <a href="shops.html">Find my pet</a>
+        `
+        <h2 id='score'> YOUR IDEAL BIRD:</h2>
+        <div class="wrapper">
+        <div class="main_fish">
+        <center>
+        <img class="fish_img3" src="images/bird/africangrey1.png">
+        <h3 id='score'>African Grey</h3>
+        <p id='score'>
+        African greys are known as having the outstanding ability to earn a human word and imitate speech, they earned the title "The Einstein of the Bird World".
+        This might be the perfect pet for you, since they can bond strongly with you and learn positive reinforcement training from you , as his new owner.</p>
+        </center>
         </div>
+        <div class="other-consider">
+        <h3 id='score'> ALSO CONSIDER</h3>
+        <img class="fish_img3" src="images/bird/conures1.png">
+        <h4 id='score'> Conures</h4>
+        <img class="fish_img3" src="images/bird/macaws1.png">
+        <h4 id='score'> Macaws</h4>
+        </div>
+
+       
+        </div>
+       
+        <div class="quiz-repeat">
+        <a href="shops.html">Find my pet</a>
+        </div>
+        
         `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
     }
-    // reptile that doesn't shed
+    // small birds
     else {
         let quizEndHTML =
-            `
-        <h2 id='score'> YOUR IDEAL reptile:</h2>
-            <div class="wrapper">
-                <div class="main_fish">
-                    <center>
-                        <img class="fish_img" src="images/reptile/leopard_gecko.jpg">
-                        <h3 id='score'>Leapard Gecko</h3
-                        <p id='score'>Leapard Gecko's are small, have minimal care requirements, and can be left alone for several days if necessary. 
-                        They are also quiet, don't smell, and don't need a lot of attention.</p>
-                    </center>
-                </div>
-                    <div class="other-consider">
-                        <h3 id='score'> ALSO CONSIDER</h3>
-                        <img class="fish_img2" src="images/reptile/Bearded_Dragon.jpg">
-                        <h4 id='score'>Bearded Dragon</h4>
-                        <img class="fish_img2" src="images/reptile/tortouse.jpg">
-                        <h4 id='score'>Tortoise</h4>
-                    </div>
-                </div>
-        <div class="quiz-repeat">
-            <a href="shops.html">Find my pet</a>
+         `
+        <h2 class='score'> YOUR IDEAL BIRD:</h2>
+        <div class="wrapper">
+        <div class="main_fish">
+       <center>
+        <img class="fish_img3" src="images/bird/parkeet1.png">
+        
+        <h3 class='score'> Parakeet</h3>
+         Parakeets are one of the top birds worldwide as a pet, they are tiny parrot versions with long tail feathers.
+        This may be the perfect pet for you,since they can be trained on how to talk and also perform tricks. This pet bird is also pretty low-maintenance. </p>
+        </center>
         </div>
-        `;
+       
+        <div class="other-consider">
+        <h3 class='score'> ALSO CONSIDER</h3>
+        <img class="fish_img3" src="images/bird/parrot1.png">
+        <h4 class='score'>Parrot</h4>
+        <img class="fish_img3" src="images/bird/cockatiel1.png">
+        <h4 class='score'>Cockatiel</h4>
+        </div>
+
+       
+        </div>
+       
+        <br>
+        <br>
+        <div class="quiz-repeat">
+        <a href="shops.html">Find my pet</a>
+        </div>
+    `;
         let quizElement = document.getElementById("quiz");
         quizElement.innerHTML = quizEndHTML;
+
     }
 };
 
@@ -175,31 +189,25 @@ var image = document.getElementById('myImage');
 
 let questions = [
     new Question(
-        "", ["Big", "Normal", "Small"], "Big"
+        "", ["Apartment", "Studio", "Student House", "Family Home"], "Family Home"
     ),
     new Question(
-        "", ["Twice a week", "Once a week", "Once every 2 weeks"], "Twice a week"
+        "", ["Yes", "No", "Not Sure","No but someone in my family has"], "No"
     ),
     new Question(
-        "", ["5-7 years", "20-25 years", "more then 25 years"], "more then 25 years"
+        "", ["5 to 10 years", "15 to 20 years","20 years", "40 years"], "40 years"
     ),
     new Question(
-        "", ["yes", "no","I don't know"], "yes"
+        "", ["Usually all day", "Often", "Not home very often","Mostly in the evenings and afternoons"], "Often"
     ),
     new Question(
-        "", ["I dont have one ", "less then 200", "more then 200"], "more then 200"
-    ),
-    new Question(
-        "", ["Yes", "No", "I don't know"], "Yes"
-    ),
-    new Question(
-        "", ["Yes", "No", "I don't know"], "Yes"
+        "", ["Big", "Small","Average", "No preference"], "Big"
     )
 ];
 
 //Changes the piture each question
 function pictureChange() {
-    document.querySelector('#myImage').setAttribute("src", `images/reptile/step${quiz.questionIndex + 1}.png`)
+    document.querySelector('#myImage').setAttribute("src", `images/bird/step${quiz.questionIndex + 1}.png`)
 
 }
 
