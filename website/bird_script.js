@@ -116,7 +116,7 @@ function showScores() {
         <div class="wrapper">
         <div class="main_fish">
         <center>
-        <img class="fish_img" src="images/bird/africangrey1.png">
+        <img class="fish_img3" src="images/bird/africangrey1.png">
         <h3 id='score'>African Grey</h3>
         <p id='score'>
         African greys are known as having the outstanding ability to earn a human word and imitate speech, they earned the title "The Einstein of the Bird World".
@@ -125,9 +125,9 @@ function showScores() {
         </div>
         <div class="other-consider">
         <h3 id='score'> ALSO CONSIDER</h3>
-        <img class="fish_img2" src="images/bird/conures1.png">
+        <img class="fish_img3" src="images/bird/conures1.png">
         <h4 id='score'> Canaries</h4>
-        <img class="fish_img2" src="images/bird/macaws1.png">
+        <img class="fish_img3" src="images/bird/macaws1.png">
         <h4 id='score'> LoveBirds</h4>
         </div>
 
@@ -145,7 +145,7 @@ function showScores() {
     // small birds
     else {
         let quizEndHTML =
-        `
+         `
         <h2 class='score'> YOUR IDEAL BIRD:</h2>
         <div class="wrapper">
         <div class="main_fish">
@@ -160,9 +160,9 @@ function showScores() {
        
         <div class="other-consider">
         <h3 class='score'> ALSO CONSIDER</h3>
-        <img class="fish_img2" src="images/bird/parrot1.png">
+        <img class="fish_img3" src="images/bird/parrot1.png">
         <h4 class='score'>Parrot</h4>
-        <img class="fish_img2" src="images/bird/cockatiel1.png">
+        <img class="fish_img3" src="images/bird/cockatiel1.png">
         <h4 class='score'>Cockatiel</h4>
         </div>
 

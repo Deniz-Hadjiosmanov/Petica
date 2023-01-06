@@ -311,11 +311,19 @@ a {
 .fish_img2 {
     width: 150px;
     border: solid 4px;
-    border-radius: 50%;
+    border-radius: 50%; 
     border-color: #FFC800;
     object-fit: cover;
 }
 
+.fish_img3{
+    width: 150px;
+    border: solid 4px;
+    border-radius: 10%;
+    border-color: #FFC800;
+    object-fit: cover;
+    scale: 50px;
+}
 .main_fish {
     width: 60%;
     float: left;
