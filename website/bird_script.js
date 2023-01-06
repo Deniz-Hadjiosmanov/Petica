@@ -126,9 +126,9 @@ function showScores() {
         <div class="other-consider">
         <h3 id='score'> ALSO CONSIDER</h3>
         <img class="fish_img3" src="images/bird/conures1.png">
-        <h4 id='score'> Canaries</h4>
+        <h4 id='score'> Conures</h4>
         <img class="fish_img3" src="images/bird/macaws1.png">
-        <h4 id='score'> LoveBirds</h4>
+        <h4 id='score'> Macaws</h4>
         </div>
 
        
