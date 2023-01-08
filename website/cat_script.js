@@ -52,10 +52,10 @@ backButton.style.borderWidth = "4px";
 backButton.style.height = "50px";
 backButton.style.width = "67px";
 backButton.style.borderRadius = "50%";
-backButton.onclick = function() {
-  quiz.questionIndex--;
-  displayQuestion();
-  pictureChange();
+backButton.onclick = function () {
+    quiz.questionIndex--;
+    displayQuestion();
+    pictureChange();
 }
 let quizElement = document.getElementById("quiz");
 quizElement.appendChild(backButton);
@@ -80,9 +80,9 @@ function displayQuestion() {
 
     // hide or show the back button based on the current questionIndex
     if (quiz.questionIndex === 0) {
-      backButton.style.display = "none";
+        backButton.style.display = "none";
     } else {
-      backButton.style.display = "inline-block";
+        backButton.style.display = "inline-block";
     }
 };
 
@@ -147,21 +147,21 @@ function showScores() {
     else {
         let quizEndHTML =
             `
-        <h2 id='score'> YOUR IDEAL CAT:</h2>
+        <h2 class='score'> YOUR IDEAL CAT:</h2>
         <div class="wrapper">
         <div class="main_fish">
         <center>
         <img class="fish_img" src="images/cat/devon_rex_cat.png">
-        <h3 id='score'> DEVON REX CAT</h3>
-        <p id='score'>These cats have short, thin coats that require minimal grooming. They are known to shed very little and may only require occasional grooming </p>
+        <h3 class='score'> DEVON REX CAT</h3>
+        <p class='score'>These cats have short, thin coats that require minimal grooming. They are known to shed very little and may only require occasional grooming </p>
         </center>
         </div>
         <div class="other-consider">
-        <h3 id='score'> ALSO CONSIDER</h3>
+        <h3 class='score'> ALSO CONSIDER</h3>
         <img class="fish_img2" src="images/cat/cornish_rex_cat.png">
-        <h4 id='score'> Cornish Rex Cat</h4>
+        <h4 class='score'> Cornish Rex Cat</h4>
         <img class="fish_img2" src="images/cat/sphynx_cat.png">
-        <h4 id='score'> Sphynx Cat</h4>
+        <h4 class='score'> Sphynx Cat</h4>
         </div>
 
        

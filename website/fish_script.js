@@ -52,10 +52,10 @@ backButton.style.borderWidth = "4px";
 backButton.style.height = "50px";
 backButton.style.width = "67px";
 backButton.style.borderRadius = "50%";
-backButton.onclick = function() {
-  quiz.questionIndex--;
-  displayQuestion();
-  pictureChange();
+backButton.onclick = function () {
+    quiz.questionIndex--;
+    displayQuestion();
+    pictureChange();
 }
 let quizElement = document.getElementById("quiz");
 quizElement.appendChild(backButton);
@@ -80,9 +80,9 @@ function displayQuestion() {
 
     // hide or show the back button based on the current questionIndex
     if (quiz.questionIndex === 0) {
-      backButton.style.display = "none";
+        backButton.style.display = "none";
     } else {
-      backButton.style.display = "inline-block";
+        backButton.style.display = "inline-block";
     }
 };
 
@@ -118,17 +118,17 @@ function showScores() {
            <center>
             <img class="fish_img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/1433873-center-1">
             
-            <h3 id='score'> GOLDEN WHITE CLOUD</h3>
-            <p id='score'>Golden White Clouds are active, gold-colored fish that like to swim around the tank near the surface. They require a 10-gallon tank and are hardy, so they’re great for beginner aquarists. They like to swim with a school of fish, so consider getting some friends! </p>
+            <h3 class='score'> GOLDEN WHITE CLOUD</h3>
+            <p class='score'>Golden White Clouds are active, gold-colored fish that like to swim around the tank near the surface. They require a 10-gallon tank and are hardy, so they’re great for beginner aquarists. They like to swim with a school of fish, so consider getting some friends! </p>
             </center>
             </div>
            
             <div class="other-consider">
-            <h3 id='score'> ALSO CONSIDER</h3>
+            <h3 class='score'> ALSO CONSIDER</h3>
             <img class="fish_img2" src="images/fish/gold.png">
-            <h4 id='score'> Gold fish</h4>
+            <h4 class='score'> Gold fish</h4>
             <img class="fish_img2" src="images/fish/betta.png">
-            <h4 id='score'> Beta</h4>
+            <h4 class='score'> Beta</h4>
             </div>
     
            
@@ -147,21 +147,21 @@ function showScores() {
     else {
         let quizEndHTML =
             `
-        <h2 id='score'> YOUR IDEAL FISH:</h2>
+        <h2 class='score'> YOUR IDEAL FISH:</h2>
         <div class="wrapper">
         <div class="main_fish">
         <center>
         <img class="fish_img" src="https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/3468522-center-1">
-        <h3 id='score'> YELLOWTAIL DAMSELFISH</h3>
-        <p id='score'>The Yellowtail Damselfish is no damsel in distress, but it does prefer to have a few hiding places and peaceful tankmates. It’s hardy, easy to care for, and beautiful, making it a great option for both beginner and advanced aquarists alike. </p>
+        <h3 class='score'> YELLOWTAIL DAMSELFISH</h3>
+        <p class='score'>The Yellowtail Damselfish is no damsel in distress, but it does prefer to have a few hiding places and peaceful tankmates. It’s hardy, easy to care for, and beautiful, making it a great option for both beginner and advanced aquarists alike. </p>
         </center>
         </div>
         <div class="other-consider">
-        <h3 id='score'> ALSO CONSIDER</h3>
+        <h3 class='score'> ALSO CONSIDER</h3>
         <img class="fish_img2" src="http://cdn.shopify.com/s/files/1/0443/5007/9132/products/Electricblueramcichlid_thumbnail_1200x1200.jpg?v=1615573573">
-        <h4 id='score'> Electric Blue Cichlid</h4>
+        <h4 class='score'> Electric Blue Cichlid</h4>
         <img class="fish_img2" src="https://thumbs.dreamstime.com/b/purple-firefish-15832463.jpg">
-        <h4 id='score'> Purple Firefish</h4>
+        <h4 class='score'> Purple Firefish</h4>
         </div>
 
        

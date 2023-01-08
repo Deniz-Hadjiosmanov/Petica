@@ -181,6 +181,7 @@ a {
 /* HOME */
 
 
+
 /* PET SUGGESTOR */
 
 .container {
@@ -202,6 +203,7 @@ a {
 
 .quiz-box h2 {
     background-color: var(--grey);
+    font-family: var(--font-headings);
     font-size: 3rem;
     text-align: center;
     color: aliceblue;
@@ -269,6 +271,10 @@ a {
     background-color: rgb(43, 226, 89);
 }
 
+.score {
+    font-family: var(--font-headings);
+}
+
 .score h2 {
     color: black;
     text-align: center;
@@ -280,14 +286,12 @@ a {
     color: black;
     text-align: center;
     font-size: 2.0rem;
-
 }
 
 .score p {
     color: black;
     text-align: center;
     font-size: 1.8rem;
-
 }
 
 .column1 {
