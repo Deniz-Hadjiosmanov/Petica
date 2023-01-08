@@ -111,12 +111,12 @@ function showScores() {
         // reptile that sheds
         let quizEndHTML =
             `
-        <h2 id='score'> YOUR IDEAL reptile:</h2>
+        <h2 id='score'> YOUR IDEAL REPTILE:</h2>
             <div class="wrapper">
                 <div class="main_fish">
                     <center>
                         <img class="fish_img" src="images/reptile/pet_snake.png">
-                        <h3 id='score'>Ball Python</h3
+                        <h3 id='score'>Ball Python</h3>
                         <p id='score'>Arguably the most popular pet snake there is, the ball python is a very even-tempered, docile snake. 
                         They only grow to be about 3-5 feet in length but can live as long as 35 years in captivity.</p>
                     </center>
@@ -140,12 +140,12 @@ function showScores() {
     else {
         let quizEndHTML =
             `
-        <h2 id='score'> YOUR IDEAL reptile:</h2>
+        <h2 id='score'> YOUR IDEAL REPTILE:</h2>
             <div class="wrapper">
                 <div class="main_fish">
                     <center>
                         <img class="fish_img" src="images/reptile/leopard_gecko.jpg">
-                        <h3 id='score'>Leapard Gecko</h3
+                        <h3 id='score'>Leapard Gecko</h3>
                         <p id='score'>Leapard Gecko's are small, have minimal care requirements, and can be left alone for several days if necessary. 
                         They are also quiet, don't smell, and don't need a lot of attention.</p>
                     </center>
@@ -154,7 +154,7 @@ function showScores() {
                         <h3 id='score'> ALSO CONSIDER</h3>
                         <img class="fish_img2" src="images/reptile/Bearded_Dragon.jpg">
                         <h4 id='score'>Bearded Dragon</h4>
-                        <img class="fish_img2" src="images/reptile/tortouse.jpg">
+                        <img class="fish_img2" src="images/reptile/tortoise.jpg">
                         <h4 id='score'>Tortoise</h4>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ let questions = [
         "", ["5-7 years", "20-25 years", "more then 25 years"], "more then 25 years"
     ),
     new Question(
-        "", ["yes", "no","I don't know"], "yes"
+        "", ["yes", "no", "I don't know"], "yes"
     ),
     new Question(
         "", ["I dont have one ", "less then 200", "more then 200"], "more then 200"
