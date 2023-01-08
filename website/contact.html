@@ -43,7 +43,7 @@
 
             <!-- body for the name, email, and textarea -->
 
-            <form>
+            <form method="POST" action="send-email.php">
                 <h3>Get in Touch</h3>
                 <div class="formAddress">
                     <h2>Rachelsmolen 1, 5612 MA Eindhoven</h2><img src="images/location.png">
@@ -55,15 +55,13 @@
                     <h2>+31 232103212</h2><img src="images/mobilePhone.png">
                 </div>
                 <div class="form-row">
-                    <input type="text" id="username" name="username" placeholder="Name" required="">
-
+                    <input type="text" id="name" name="name" placeholder="Name" required>
                     <input type="email" id="email" name="email" placeholder="Email Address" required
                         pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
                 </div>
-                <textarea class="textArea" id="textarea" placeholder="Enter your message here..."
-                    required=""></textarea>
-
-                <input type="submit" value="Send" onclick="submitMessage()">
+                <textarea class="textArea" id="message" name="message" placeholder="Enter your message here..."
+                    required></textarea>
+                <input type="submit" value="Send">
             </form>
 
 
@@ -74,7 +72,6 @@
         </section>
     </section>
 
-    <script src="messageScript.js"></script>
     <footer>
         <h2>Find us here</h2>
         <div id="footer-icons-container">
@@ -83,6 +80,7 @@
     </footer>
 
     <script src="hamburger_script.js"></script>
+    <!--script src="messageScript.js"></script-->
 </body>
 
 </html>
