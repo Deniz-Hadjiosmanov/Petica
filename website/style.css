@@ -164,8 +164,13 @@ a {
 .home-advice-cards img {
     width: 30vw;
     height: auto;
-    cursor: url("images/paw.png"), auto;
     animation: showcards 2s;
+    transition: transform 0.5s ease;
+}
+
+.home-advice-cards img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @keyframes showcards {
