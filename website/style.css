@@ -426,28 +426,25 @@ a {
 
 h1 {
     font-family: var(--font-headings);
-    font-size: 3vw;
+    font-size: 3rem;
     text-align: center;
     margin: 3rem;
 }
 
 
-.erik-container {
+.map-container {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
-    width: 100%;
-    padding-top: 60%;
+    width: 100vw;
+    height: 100vh;
 }
 
-.erik-container iframe {
-    position: absolute;
-    top: 0;
-    left: 15%;
-    bottom: 0;
-    right: 0;
+.map-container iframe {
     width: 70%;
-    height: 70%;
-    border: 6px solid #FFC800;
+    height: 90%;
+    border: 6px solid var(--yellow);
     padding: 5px;
 }
 
@@ -827,6 +824,8 @@ footer h2 {
     }
 }
 
+
+/* Big Tablet  (iPad Air)*/
 @media screen and (max-width: 821px) {
     .hamburger {
         display: block;
@@ -922,6 +921,10 @@ footer h2 {
         width: 30rem;
     }
 
+    .map-container {
+        height: 65vh;
+    }
+
     #dogContainer {
         width: 45%;
     }
@@ -934,6 +937,20 @@ footer h2 {
 
     .quiz-header #progress {
         font-size: 1.2rem;
+    }
+
+    #shops-heading {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*contact responsiveness*/
+
+    #dogContainer {
+        /*Background container for the dog image*/
+        display: none;
     }
 }
 
@@ -981,14 +998,14 @@ footer h2 {
         margin-bottom: 3rem;
     }
 
-    /*contact responsiveness*/
-
-    #dogContainer {
-        /*Background container for the dog image*/
-        display: none;
+    #shops-heading {
+        margin: 3rem 0;
+        font-size: 1.8rem;
     }
 }
 
+
+/* Phone */
 @media screen and (max-width: 420px) {
     .text-container h1 {
         font-size: 40px;
@@ -1057,6 +1074,10 @@ footer h2 {
 
     .btn {
         font-size: 1.2rem;
+    }
+
+    #shops-heading {
+        font-size: 1.6rem;
     }
 
     /*contact responsive*/
