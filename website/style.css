@@ -768,6 +768,37 @@ form input[type=submit]:hover {
 
 
 
+/* THANKS PAGE (on form submission) */
+
+#thanks-form-submitted {
+    margin: auto;
+    text-align: center;
+}
+
+#thanks-form-submitted button {
+    padding: 7px 126px;
+    border: none;
+    background-color: #FFC800;
+    border-radius: 13px 13px 13px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 2rem;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+#thanks-form-submitted button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* THANKS PAGE (on form submission) */
+
+
+
 /* FOOTER */
 
 footer {
@@ -942,6 +973,10 @@ footer h2 {
     #shops-heading {
         font-size: 2rem;
     }
+
+    #thanks-form-submitted h1 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1085,6 +1120,14 @@ footer h2 {
         /*dog picture*/
         height: 20%;
         width: 80%;
+    }
+
+    #thanks-form-submitted h1 {
+        font-size: 1.8rem;
+    }
+
+    #thanks-form-submitted button {
+        font-size: 1rem;
     }
 }
 
