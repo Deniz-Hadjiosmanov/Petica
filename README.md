@@ -1,8 +1,8 @@
-# UnXpectica
+# Petica
 
 Here you can find the development of our product Petica
 
-To open our product, use the following link: http://i477928.hera.fhict.nl/Semester3/Petica 
+To open our product, use the following link: https://i477928.hera.fontysict.net/Petica
 
 **What is our Product?**<br>
 We made a website called Petica which works as a pet suggestor that recommends a suitable breed of an animal based on questions that the user has to answer.
